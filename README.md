@@ -1,8 +1,8 @@
-## OpenVSP 3.49.0 Rebuild
+## OpenVSP Lib
 
 Original repo: https://github.com/OpenVSP/OpenVSP
 
-Rebuild for using as a external lib
+Rebuild OpenVSP 3.49.0 for using as a external cpp lib
 
 ### Build variables:
 - VSP_NO_GRAPHICS
@@ -63,3 +63,7 @@ Denpendencies categories 1&2 are included in this repo.
     'comdlg32',
     'advapi32',
 ```
+
+### License
+
+NOSA 1.3
