@@ -2,7 +2,7 @@
 
 Original repo: https://github.com/OpenVSP/OpenVSP
 
-Rebuild OpenVSP 3.49.0 for using as a external cpp lib
+Rebuild OpenVSP 3.49.0 for using as an external cpp lib
 
 ### Build variables:
 - VSP_NO_GRAPHICS
