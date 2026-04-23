@@ -1,10 +1,10 @@
-## OpenVSP Lib
+# OpenVSP Library
 
 Original repo: https://github.com/OpenVSP/OpenVSP
+Rebuild OpenVSP 3.49.0 for using as an external cpp lib.
+Regenerated markdown docs.
 
-Rebuild OpenVSP 3.49.0 for using as an external cpp lib
-
-### Build variables:
+## Build variables:
 - VSP_NO_GRAPHICS
 - VSP_NO_VSPAERO
 - VSP_NO_API_WRAPPERS
@@ -12,7 +12,7 @@ Rebuild OpenVSP 3.49.0 for using as an external cpp lib
 - VSP_NO_DOC
 - VSP_NO_PYDOC
 
-### Dependencies:
+## Dependencies:
 Denpendencies categories 1&2 are included in this repo.
 ```
     # ---1. OpenVSP core lib ---
