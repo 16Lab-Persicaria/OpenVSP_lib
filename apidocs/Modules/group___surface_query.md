@@ -12,39 +12,39 @@ This group of API functions pertains to general surface queries for Geom surface
 
 |                | Name           |
 | -------------- | -------------- |
-| vec3d | **[CompPnt01](Modules/group___surface_query.md#function-comppnt01)**(const std::string & geom_id, const int & surf_indx, const double & u, const double & w) |
-| vec3d | **[CompNorm01](Modules/group___surface_query.md#function-compnorm01)**(const std::string & geom_id, const int & surf_indx, const double & u, const double & w) |
-| vec3d | **[CompTanU01](Modules/group___surface_query.md#function-comptanu01)**(const std::string & geom_id, const int & surf_indx, const double & u, const double & w) |
-| vec3d | **[CompTanW01](Modules/group___surface_query.md#function-comptanw01)**(const std::string & geom_id, const int & surf_indx, const double & u, const double & w) |
+| [vec3d](Classes/classvec3d.md) | **[CompPnt01](Modules/group___surface_query.md#function-comppnt01)**(const std::string & geom_id, const int & surf_indx, const double & u, const double & w) |
+| [vec3d](Classes/classvec3d.md) | **[CompNorm01](Modules/group___surface_query.md#function-compnorm01)**(const std::string & geom_id, const int & surf_indx, const double & u, const double & w) |
+| [vec3d](Classes/classvec3d.md) | **[CompTanU01](Modules/group___surface_query.md#function-comptanu01)**(const std::string & geom_id, const int & surf_indx, const double & u, const double & w) |
+| [vec3d](Classes/classvec3d.md) | **[CompTanW01](Modules/group___surface_query.md#function-comptanw01)**(const std::string & geom_id, const int & surf_indx, const double & u, const double & w) |
 | void | **[CompCurvature01](Modules/group___surface_query.md#function-compcurvature01)**(const std::string & geom_id, const int & surf_indx, const double & u, const double & w, double & k1_out, double & k2_out, double & ka_out, double & kg_out) |
-| double | **[ProjPnt01](Modules/group___surface_query.md#function-projpnt01)**(const std::string & geom_id, const int & surf_indx, const vec3d & pt, double & u_out, double & w_out) |
-| double | **[ProjPnt01I](Modules/group___surface_query.md#function-projpnt01i)**(const std::string & geom_id, const vec3d & pt, int & surf_indx_out, double & u_out, double & w_out) |
-| double | **[ProjPnt01Guess](Modules/group___surface_query.md#function-projpnt01guess)**(const std::string & geom_id, const int & surf_indx, const vec3d & pt, const double & u0, const double & w0, double & u_out, double & w_out) |
-| double | **[AxisProjPnt01](Modules/group___surface_query.md#function-axisprojpnt01)**(const std::string & geom_id, const int & surf_indx, const int & iaxis, const vec3d & pt, double & u_out, double & w_out) |
-| double | **[AxisProjPnt01I](Modules/group___surface_query.md#function-axisprojpnt01i)**(const std::string & geom_id, const int & iaxis, const vec3d & pt, int & surf_indx_out, double & u_out, double & w_out) |
-| double | **[AxisProjPnt01Guess](Modules/group___surface_query.md#function-axisprojpnt01guess)**(const std::string & geom_id, const int & surf_indx, const int & iaxis, const vec3d & pt, const double & u0, const double & w0, double & u_out, double & w_out) |
-| bool | **[InsideSurf](Modules/group___surface_query.md#function-insidesurf)**(const std::string & geom_id, const int & surf_indx, const vec3d & pt) |
-| vec3d | **[CompPntRST](Modules/group___surface_query.md#function-comppntrst)**(const std::string & geom_id, const int & surf_indx, const double & r, const double & s, const double & t) |
-| double | **[FindRST](Modules/group___surface_query.md#function-findrst)**(const std::string & geom_id, const int & surf_indx, const vec3d & pt, double & r_out, double & s_out, double & t_out) |
-| double | **[FindRSTGuess](Modules/group___surface_query.md#function-findrstguess)**(const std::string & geom_id, const int & surf_indx, const vec3d & pt, const double & r0, const double & s0, const double & t0, double & r_out, double & s_out, double & t_out) |
+| double | **[ProjPnt01](Modules/group___surface_query.md#function-projpnt01)**(const std::string & geom_id, const int & surf_indx, const [vec3d](Classes/classvec3d.md) & pt, double & u_out, double & w_out) |
+| double | **[ProjPnt01I](Modules/group___surface_query.md#function-projpnt01i)**(const std::string & geom_id, const [vec3d](Classes/classvec3d.md) & pt, int & surf_indx_out, double & u_out, double & w_out) |
+| double | **[ProjPnt01Guess](Modules/group___surface_query.md#function-projpnt01guess)**(const std::string & geom_id, const int & surf_indx, const [vec3d](Classes/classvec3d.md) & pt, const double & u0, const double & w0, double & u_out, double & w_out) |
+| double | **[AxisProjPnt01](Modules/group___surface_query.md#function-axisprojpnt01)**(const std::string & geom_id, const int & surf_indx, const int & iaxis, const [vec3d](Classes/classvec3d.md) & pt, double & u_out, double & w_out) |
+| double | **[AxisProjPnt01I](Modules/group___surface_query.md#function-axisprojpnt01i)**(const std::string & geom_id, const int & iaxis, const [vec3d](Classes/classvec3d.md) & pt, int & surf_indx_out, double & u_out, double & w_out) |
+| double | **[AxisProjPnt01Guess](Modules/group___surface_query.md#function-axisprojpnt01guess)**(const std::string & geom_id, const int & surf_indx, const int & iaxis, const [vec3d](Classes/classvec3d.md) & pt, const double & u0, const double & w0, double & u_out, double & w_out) |
+| bool | **[InsideSurf](Modules/group___surface_query.md#function-insidesurf)**(const std::string & geom_id, const int & surf_indx, const [vec3d](Classes/classvec3d.md) & pt) |
+| [vec3d](Classes/classvec3d.md) | **[CompPntRST](Modules/group___surface_query.md#function-comppntrst)**(const std::string & geom_id, const int & surf_indx, const double & r, const double & s, const double & t) |
+| double | **[FindRST](Modules/group___surface_query.md#function-findrst)**(const std::string & geom_id, const int & surf_indx, const [vec3d](Classes/classvec3d.md) & pt, double & r_out, double & s_out, double & t_out) |
+| double | **[FindRSTGuess](Modules/group___surface_query.md#function-findrstguess)**(const std::string & geom_id, const int & surf_indx, const [vec3d](Classes/classvec3d.md) & pt, const double & r0, const double & s0, const double & t0, double & r_out, double & s_out, double & t_out) |
 | void | **[ConvertRSTtoLMN](Modules/group___surface_query.md#function-convertrsttolmn)**(const std::string & geom_id, const int & surf_indx, const double & r, const double & s, const double & t, double & l_out, double & m_out, double & n_out) |
 | void | **[ConvertRtoL](Modules/group___surface_query.md#function-convertrtol)**(const std::string & geom_id, const int & surf_indx, const double & r, double & l_out) |
 | void | **[ConvertLMNtoRST](Modules/group___surface_query.md#function-convertlmntorst)**(const std::string & geom_id, const int & surf_indx, const double & l, const double & m, const double & n, double & r_out, double & s_out, double & t_out) |
 | void | **[ConvertLtoR](Modules/group___surface_query.md#function-convertltor)**(const std::string & geom_id, const int & surf_indx, const double & l, double & r_out) |
 | void | **[ConvertUtoEta](Modules/group___surface_query.md#function-convertutoeta)**(const std::string & geom_id, const double & u, double & eta_out) |
 | void | **[ConvertEtatoU](Modules/group___surface_query.md#function-convertetatou)**(const std::string & geom_id, const double & eta, double & u_out) |
-| std::vector< vec3d > | **[CompVecPnt01](Modules/group___surface_query.md#function-compvecpnt01)**(const std::string & geom_id, const int & surf_indx, const std::vector< double > & u_in_vec, const std::vector< double > & w_in_vec) |
-| std::vector< vec3d > | **[CompVecDegenPnt01](Modules/group___surface_query.md#function-compvecdegenpnt01)**(const std::string & geom_id, const int & surf_indx, const int & degen_type, const std::vector< double > & u_in_vec, const std::vector< double > & w_in_vec) |
-| std::vector< vec3d > | **[CompVecNorm01](Modules/group___surface_query.md#function-compvecnorm01)**(const std::string & geom_id, const int & surf_indx, const std::vector< double > & us, const std::vector< double > & ws) |
+| std::vector< [vec3d](Classes/classvec3d.md) > | **[CompVecPnt01](Modules/group___surface_query.md#function-compvecpnt01)**(const std::string & geom_id, const int & surf_indx, const std::vector< double > & u_in_vec, const std::vector< double > & w_in_vec) |
+| std::vector< [vec3d](Classes/classvec3d.md) > | **[CompVecDegenPnt01](Modules/group___surface_query.md#function-compvecdegenpnt01)**(const std::string & geom_id, const int & surf_indx, const int & degen_type, const std::vector< double > & u_in_vec, const std::vector< double > & w_in_vec) |
+| std::vector< [vec3d](Classes/classvec3d.md) > | **[CompVecNorm01](Modules/group___surface_query.md#function-compvecnorm01)**(const std::string & geom_id, const int & surf_indx, const std::vector< double > & us, const std::vector< double > & ws) |
 | void | **[CompVecCurvature01](Modules/group___surface_query.md#function-compveccurvature01)**(const std::string & geom_id, const int & surf_indx, const std::vector< double > & us, const std::vector< double > & ws, std::vector< double > & k1_out_vec, std::vector< double > & k2_out_vec, std::vector< double > & ka_out_vec, std::vector< double > & kg_out_vec) |
-| void | **[ProjVecPnt01](Modules/group___surface_query.md#function-projvecpnt01)**(const std::string & geom_id, const int & surf_indx, const std::vector< vec3d > & pts, std::vector< double > & u_out_vec, std::vector< double > & w_out_vec, std::vector< double > & d_out_vec) |
-| void | **[ProjVecPnt01Guess](Modules/group___surface_query.md#function-projvecpnt01guess)**(const std::string & geom_id, const int & surf_indx, const std::vector< vec3d > & pts, const std::vector< double > & u0s, const std::vector< double > & w0s, std::vector< double > & u_out_vec, std::vector< double > & w_out_vec, std::vector< double > & d_out_vec) |
-| void | **[AxisProjVecPnt01](Modules/group___surface_query.md#function-axisprojvecpnt01)**(const std::string & geom_id, const int & surf_indx, const int & iaxis, const std::vector< vec3d > & pts, std::vector< double > & u_out_vec, std::vector< double > & w_out_vec, std::vector< double > & d_out_vec) |
-| void | **[AxisProjVecPnt01Guess](Modules/group___surface_query.md#function-axisprojvecpnt01guess)**(const std::string & geom_id, const int & surf_indx, const int & iaxis, const std::vector< vec3d > & pts, const std::vector< double > & u0s, const std::vector< double > & w0s, std::vector< double > & u_out_vec, std::vector< double > & w_out_vec, std::vector< double > & d_out_vec) |
-| std::vector< bool > | **[VecInsideSurf](Modules/group___surface_query.md#function-vecinsidesurf)**(const std::string & geom_id, const int & surf_indx, const std::vector< vec3d > & pts) |
-| std::vector< vec3d > | **[CompVecPntRST](Modules/group___surface_query.md#function-compvecpntrst)**(const std::string & geom_id, const int & surf_indx, const std::vector< double > & r_in_vec, const std::vector< double > & s_in_vec, const std::vector< double > & t_in_vec) |
-| void | **[FindRSTVec](Modules/group___surface_query.md#function-findrstvec)**(const std::string & geom_id, const int & surf_indx, const std::vector< vec3d > & pts, std::vector< double > & r_out_vec, std::vector< double > & s_out_vec, std::vector< double > & t_out_vec, std::vector< double > & d_out_vec) |
-| void | **[FindRSTVecGuess](Modules/group___surface_query.md#function-findrstvecguess)**(const std::string & geom_id, const int & surf_indx, const std::vector< vec3d > & pts, const std::vector< double > & r0s, const std::vector< double > & s0s, const std::vector< double > & t0s, std::vector< double > & r_out_vec, std::vector< double > & s_out_vec, std::vector< double > & t_out_vec, std::vector< double > & d_out_vec) |
+| void | **[ProjVecPnt01](Modules/group___surface_query.md#function-projvecpnt01)**(const std::string & geom_id, const int & surf_indx, const std::vector< [vec3d](Classes/classvec3d.md) > & pts, std::vector< double > & u_out_vec, std::vector< double > & w_out_vec, std::vector< double > & d_out_vec) |
+| void | **[ProjVecPnt01Guess](Modules/group___surface_query.md#function-projvecpnt01guess)**(const std::string & geom_id, const int & surf_indx, const std::vector< [vec3d](Classes/classvec3d.md) > & pts, const std::vector< double > & u0s, const std::vector< double > & w0s, std::vector< double > & u_out_vec, std::vector< double > & w_out_vec, std::vector< double > & d_out_vec) |
+| void | **[AxisProjVecPnt01](Modules/group___surface_query.md#function-axisprojvecpnt01)**(const std::string & geom_id, const int & surf_indx, const int & iaxis, const std::vector< [vec3d](Classes/classvec3d.md) > & pts, std::vector< double > & u_out_vec, std::vector< double > & w_out_vec, std::vector< double > & d_out_vec) |
+| void | **[AxisProjVecPnt01Guess](Modules/group___surface_query.md#function-axisprojvecpnt01guess)**(const std::string & geom_id, const int & surf_indx, const int & iaxis, const std::vector< [vec3d](Classes/classvec3d.md) > & pts, const std::vector< double > & u0s, const std::vector< double > & w0s, std::vector< double > & u_out_vec, std::vector< double > & w_out_vec, std::vector< double > & d_out_vec) |
+| std::vector< bool > | **[VecInsideSurf](Modules/group___surface_query.md#function-vecinsidesurf)**(const std::string & geom_id, const int & surf_indx, const std::vector< [vec3d](Classes/classvec3d.md) > & pts) |
+| std::vector< [vec3d](Classes/classvec3d.md) > | **[CompVecPntRST](Modules/group___surface_query.md#function-compvecpntrst)**(const std::string & geom_id, const int & surf_indx, const std::vector< double > & r_in_vec, const std::vector< double > & s_in_vec, const std::vector< double > & t_in_vec) |
+| void | **[FindRSTVec](Modules/group___surface_query.md#function-findrstvec)**(const std::string & geom_id, const int & surf_indx, const std::vector< [vec3d](Classes/classvec3d.md) > & pts, std::vector< double > & r_out_vec, std::vector< double > & s_out_vec, std::vector< double > & t_out_vec, std::vector< double > & d_out_vec) |
+| void | **[FindRSTVecGuess](Modules/group___surface_query.md#function-findrstvecguess)**(const std::string & geom_id, const int & surf_indx, const std::vector< [vec3d](Classes/classvec3d.md) > & pts, const std::vector< double > & r0s, const std::vector< double > & s0s, const std::vector< double > & t0s, std::vector< double > & r_out_vec, std::vector< double > & s_out_vec, std::vector< double > & t_out_vec, std::vector< double > & d_out_vec) |
 | void | **[ConvertRSTtoLMNVec](Modules/group___surface_query.md#function-convertrsttolmnvec)**(const std::string & geom_id, const int & surf_indx, const std::vector< double > & r_vec, const std::vector< double > & s_vec, const std::vector< double > & t_vec, std::vector< double > & l_out_vec, std::vector< double > & m_out_vec, std::vector< double > & n_out_vec) |
 | void | **[ConvertLMNtoRSTVec](Modules/group___surface_query.md#function-convertlmntorstvec)**(const std::string & geom_id, const int & surf_indx, const std::vector< double > & l_vec, const std::vector< double > & m_vec, const std::vector< double > & n_vec, std::vector< double > & r_out_vec, std::vector< double > & s_out_vec, std::vector< double > & t_out_vec) |
 | void | **[GetUWTess01](Modules/group___surface_query.md#function-getuwtess01)**(const std::string & geom_id, const int & surf_indx, std::vector< double > & u_out_vec, std::vector< double > & w_out_vec) |
@@ -89,7 +89,7 @@ vec3d pnt = CompPnt01( geom_id, surf_indx, u, w );
 Print( "Point: ( " + pnt.x() + ', ' + pnt.y() + ', ' + pnt.z() + ' )' );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -144,7 +144,7 @@ vec3d norm = CompNorm01( geom_id, surf_indx, u, w );
 Print( "Point: ( " + norm.x() + ', ' + norm.y() + ', ' + norm.z() + ' )' );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -199,7 +199,7 @@ vec3d tanu = CompTanU01( geom_id, surf_indx, u, w );
 Print( "Point: ( " + tanu.x() + ', ' + tanu.y() + ', ' + tanu.z() + ' )' );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -254,7 +254,7 @@ vec3d tanw = CompTanW01( geom_id, surf_indx, u, w );
 Print( "Point: ( " + tanw.x() + ', ' + tanw.y() + ', ' + tanw.z() + ' )' );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -318,7 +318,7 @@ CompCurvature01( geom_id, surf_indx, u, w, k1, k2, ka, kg );
 Print( "Curvature : k1 " + k1 + " k2 " + k2 + " ka " + ka + " kg " + kg );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -354,7 +354,7 @@ double ProjPnt01(
 
   * **geom_id** string Parent Geom ID 
   * **surf_indx** int Main surface index from the parent Geom 
-  * **pt** vec3d Input 3D coordinate point 
+  * **pt** [vec3d](Classes/classvec3d.md) Input 3D coordinate point 
   * **u_out** double Output closest U (0 - 1) surface coordinate 
   * **w_out** double Output closest W (0 - 1) surface coordinate 
 
@@ -387,7 +387,7 @@ double d = ProjPnt01( geom_id, surf_indx, pnt, uout, wout );
 Print( "Dist " + d + " u " + uout + " w " + wout );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -429,7 +429,7 @@ double ProjPnt01I(
 **Parameters**: 
 
   * **geom_id** string Parent Geom ID 
-  * **pt** vec3d Input 3D coordinate point 
+  * **pt** [vec3d](Classes/classvec3d.md) Input 3D coordinate point 
   * **surf_indx_out** int Output main surface index from the parent Geom 
   * **u_out** double Output closest U (0 - 1) surface coordinat 
   * **w_out** double Output closest W (0 - 1) surface coordinat 
@@ -467,7 +467,7 @@ d = ProjPnt01I( geom_id, pnt, surf_indx_out, uout, wout );
 Print( "Dist " + d + " u " + uout + " w " + wout + " surf_index " + surf_indx_out );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -515,7 +515,7 @@ double ProjPnt01Guess(
 
   * **geom_id** string Parent Geom ID 
   * **surf_indx** int Main surface index from the parent Geom 
-  * **pt** vec3d Input 3D coordinate point 
+  * **pt** [vec3d](Classes/classvec3d.md) Input 3D coordinate point 
   * **u0** double Input U (0 - 1) surface coordinate guess 
   * **w0** double Input W (0 - 1) surface coordinate guess 
   * **u_out** double Output closest U (0 - 1) surface coordinate 
@@ -552,7 +552,7 @@ d = ProjPnt01Guess( geom_id, surf_indx, pnt, u + 0.1, w + 0.1, uout, wout );
 Print( "Dist " + d + " u " + uout + " w " + wout );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -633,7 +633,7 @@ Print( "iDist " + idist + " u_out " + u_out + " w_out " + w_out );
 Print( "3D Offset ", false);
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -711,7 +711,7 @@ Print( "iDist " + idist + " u_out " + u_out + " w_out " + w_out + " surf_index "
 Print( "3D Offset ", false);
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -798,7 +798,7 @@ double d = AxisProjPnt01Guess( geom_id, surf_indx, Y_DIR, pt, u0, w0, uout, wout
 Print( "Dist " + d + " u " + uout + " w " + wout );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -876,7 +876,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -922,7 +922,7 @@ vec3d CompPntRST(
   * **t** T (0 - 1) volume coordinate 
 
 
-**Return**: vec3d coordinate point 
+**Return**: [vec3d](Classes/classvec3d.md) coordinate point 
 
 Calculate the (X, Y, Z) coordinate for the input volume (R, S, T) coordinate point 
 
@@ -940,7 +940,7 @@ vec3d pnt = CompPntRST( geom_id, surf_indx, r, s, t );
 Print( "Point: ( " + pnt.x() + ', ' + pnt.y() + ', ' + pnt.z() + ' )' );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -977,7 +977,7 @@ double FindRST(
 
   * **geom_id** string Parent Geom ID 
   * **surf_indx** int Main surface index from the parent Geom 
-  * **pt** vec3d Input 3D coordinate point 
+  * **pt** [vec3d](Classes/classvec3d.md) Input 3D coordinate point 
   * **r_out** double Output closest R (0 - 1.0) volume coordinate 
   * **s_out** double Output closest S (0 - 1.0) volume coordinate 
   * **t_out** double Output closest T (0 - 1.0) volume coordinate 
@@ -1007,7 +1007,7 @@ double d = FindRST( geom_id, surf_indx, pnt, rout, sout, tout );
 Print( "Dist " + d + " r " + rout + " s " + sout + " t " + tout );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -1050,7 +1050,7 @@ double FindRSTGuess(
 
   * **geom_id** string Parent Geom ID 
   * **surf_indx** int Main surface index from the parent Geom 
-  * **pt** vec3d Input 3D coordinate point 
+  * **pt** [vec3d](Classes/classvec3d.md) Input 3D coordinate point 
   * **r0** double Input R (0 - 1.0) volume coordinate guess 
   * **s0** double Input S (0 - 1.0) volume coordinate guess 
   * **t0** double Input T (0 - 1.0) volume coordinate guess 
@@ -1089,7 +1089,7 @@ double d = FindRSTGuess( geom_id, surf_indx, pnt, r0, s0, t0, rout, sout, tout )
 Print( "Dist " + d + " r " + rout + " s " + sout + " t " + tout );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -1158,7 +1158,7 @@ double l_out, m_out, n_out;
 ConvertRSTtoLMN( geom_id, surf_indx, r, s, t, l_out, m_out, n_out );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -1208,7 +1208,7 @@ double l_out;
 ConvertRtoL( geom_id, surf_indx, r, l_out );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -1266,7 +1266,7 @@ double r_out, s_out, t_out;
 ConvertLMNtoRST( geom_id, surf_indx, l, m, n, r_out, s_out, t_out );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -1316,7 +1316,7 @@ double r_out;
 ConvertLtoR( geom_id, surf_indx, l, r_out );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -1362,7 +1362,7 @@ double eta_out;
 ConvertUtoEta( geom_id, u, eta_out );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Wing Geom
 geom_id = AddGeom( "WING", "" )
@@ -1408,7 +1408,7 @@ double u_out;
 ConvertEtatoU( geom_id, eta, u_out );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Wing Geom
 geom_id = AddGeom( "WING", "" )
@@ -1467,7 +1467,7 @@ for( int i = 0 ; i < n ; i++ )
 array< vec3d > ptvec = CompVecPnt01( geom_id, 0, uvec, wvec );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -1535,7 +1535,7 @@ for( int i = 0 ; i < n ; i++ )
 array< vec3d > ptvec = CompVecDegenPnt01( geom_id, 0, 0, uvec, wvec );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -1601,7 +1601,7 @@ for( int i = 0 ; i < n ; i++ )
 array< vec3d > normvec = CompVecNorm01( geom_id, 0, uvec, wvec );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -1675,7 +1675,7 @@ array<double> k1vec, k2vec, kavec, kgvec;
 CompVecCurvature01( geom_id, 0, uvec, wvec, k1vec, k2vec, kavec, kgvec );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -1758,7 +1758,7 @@ array<double> uoutv, woutv, doutv;
 ProjVecPnt01( geom_id, 0, ptvec, uoutv, woutv, doutv );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -1861,7 +1861,7 @@ for( int i = 0 ; i < n ; i++ )
 ProjVecPnt01Guess( geom_id, 0, ptvec, u0v,  w0v,  uoutv, woutv, doutv );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -1974,7 +1974,7 @@ for( int i = 0 ; i < n ; i++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -2096,7 +2096,7 @@ for( int i = 0 ; i < n ; i++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -2195,7 +2195,7 @@ array<bool> res;
 res = VecInsideSurf( geom_id, surf_indx, ptvec );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -2274,7 +2274,7 @@ for( int i = 0 ; i < n ; i++ )
 array< vec3d > ptvec = CompVecPntRST( geom_id, 0, rvec, svec, tvec );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -2356,7 +2356,7 @@ array<double> routv, soutv, toutv, doutv;
 FindRSTVec( geom_id, 0, ptvec, routv, soutv, toutv, doutv );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -2453,7 +2453,7 @@ for( int i = 0 ; i < n ; i++ )
 FindRSTVecGuess( geom_id, 0, ptvec, rvec, svec, tvec, routv, soutv, toutv, doutv );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -2541,7 +2541,7 @@ array<double> lvec, mvec, nvec;
 ConvertRSTtoLMNVec( geom_id, 0, rvec, svec, tvec, lvec, mvec, nvec );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -2623,7 +2623,7 @@ array<double> rvec, svec, tvec;
 ConvertLMNtoRSTVec( geom_id, 0, lvec, mvec, nvec, rvec, svec, tvec );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -2678,7 +2678,7 @@ array<double> utess, wtess;
 GetUWTess01( geom_id, surf_indx, utess, wtess );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 geom_id = AddGeom( "POD", "" )
@@ -2697,4 +2697,4 @@ utess, wtess = GetUWTess01( geom_id, surf_indx )
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:24 +0800

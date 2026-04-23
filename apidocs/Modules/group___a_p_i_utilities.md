@@ -43,7 +43,7 @@ VSPCheckSetup();
 // Continue to do things...
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 VSPCheckSetup()
 
@@ -72,7 +72,7 @@ VSPRenew();
 if ( FindGeoms().size() != 0 ) { Print( "ERROR: VSPRenew" ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometry ====//
 pod_id = AddGeom( "POD" )
@@ -103,7 +103,7 @@ Print( "The current OpenVSP version is: ", false );
 Print( GetVSPVersion() );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 print( "The current OpenVSP version is: ", False )
 
@@ -133,7 +133,7 @@ int change = GetVSPVersionChange();
 Print( formatInt(major) + "." + formatInt(minor) + "." + formatInt(change) );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 print( "The current OpenVSP version is: ", False )
 
@@ -167,7 +167,7 @@ int change = GetVSPVersionChange();
 Print( formatInt(major) + "." + formatInt(minor) + "." + formatInt(change) );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 print( "The current OpenVSP version is: ", False )
 
@@ -201,7 +201,7 @@ int change = GetVSPVersionChange();
 Print( formatInt(major) + "." + formatInt(minor) + "." + formatInt(change) );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 print( "The current OpenVSP version is: ", False )
 
@@ -233,7 +233,7 @@ Print( "The current VSP executable path is: ", false );
 Print( GetVSPExePath() );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 print( "The current VSP executable path is: ", False )
 
@@ -270,7 +270,7 @@ if ( !CheckForVSPAERO( GetVSPExePath() ) )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 if  not CheckForVSPAERO( GetVSPExePath() ) :
     vspaero_path = "C:/Users/example_user/Documents/OpenVSP_3.4.5"
@@ -299,7 +299,7 @@ if ( !CheckForVSPAERO( GetVSPAEROPath() ) )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 if  not CheckForVSPAERO( GetVSPAEROPath() ) :
     print( "VSPAERO is not where OpenVSP thinks it is. I should move the VSPAERO executable or call SetVSPAEROPath." )
@@ -336,7 +336,7 @@ if ( CheckForVSPAERO( vspaero_path ) )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 vspaero_path = "C:/Users/example_user/Documents/OpenVSP_3.4.5"
 
@@ -374,7 +374,7 @@ if ( !CheckForVSPHelp( GetVSPExePath() ) )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 if  not CheckForVSPHelp( GetVSPExePath() ) :
     vsphelp_path = "C:/Users/example_user/Documents/OpenVSP_3.4.5/help"
@@ -403,7 +403,7 @@ if ( !CheckForVSPHelp( GetVSPHelpPath() ) )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 if  not CheckForVSPHelp( GetVSPHelpPath() ) :
     print( "VSPAERO is not where OpenVSP thinks it is. I should move the VSPAERO executable or call SetVSPAEROPath." )
@@ -440,7 +440,7 @@ if ( CheckForVSPHelp( vsphelp_path ) )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 vsphelp_path = "C:/Users/example_user/Documents/OpenVSP_3.4.5/help"
 
@@ -457,4 +457,4 @@ if  CheckForVSPHelp( vsphelp_path ) :
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:23 +0800

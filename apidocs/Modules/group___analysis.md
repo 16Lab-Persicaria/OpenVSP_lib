@@ -23,12 +23,12 @@ This group is for functions included in the Analysis Manager. The Analysis Manag
 | const std::vector< int > & | **[GetIntAnalysisInput](Modules/group___analysis.md#function-getintanalysisinput)**(const std::string & analysis, const std::string & name, int index =0) |
 | const std::vector< double > & | **[GetDoubleAnalysisInput](Modules/group___analysis.md#function-getdoubleanalysisinput)**(const std::string & analysis, const std::string & name, int index =0) |
 | const std::vector< std::string > & | **[GetStringAnalysisInput](Modules/group___analysis.md#function-getstringanalysisinput)**(const std::string & analysis, const std::string & name, int index =0) |
-| const std::vector< vec3d > & | **[GetVec3dAnalysisInput](Modules/group___analysis.md#function-getvec3danalysisinput)**(const std::string & analysis, const std::string & name, int index =0) |
+| const std::vector< [vec3d](Classes/classvec3d.md) > & | **[GetVec3dAnalysisInput](Modules/group___analysis.md#function-getvec3danalysisinput)**(const std::string & analysis, const std::string & name, int index =0) |
 | void | **[SetAnalysisInputDefaults](Modules/group___analysis.md#function-setanalysisinputdefaults)**(const std::string & analysis) |
 | void | **[SetIntAnalysisInput](Modules/group___analysis.md#function-setintanalysisinput)**(const std::string & analysis, const std::string & name, const std::vector< int > & indata, int index =0) |
 | void | **[SetDoubleAnalysisInput](Modules/group___analysis.md#function-setdoubleanalysisinput)**(const std::string & analysis, const std::string & name, const std::vector< double > & indata, int index =0) |
 | void | **[SetStringAnalysisInput](Modules/group___analysis.md#function-setstringanalysisinput)**(const std::string & analysis, const std::string & name, const std::vector< std::string > & indata, int index =0) |
-| void | **[SetVec3dAnalysisInput](Modules/group___analysis.md#function-setvec3danalysisinput)**(const std::string & analysis, const std::string & name, const std::vector< vec3d > & indata, int index =0) |
+| void | **[SetVec3dAnalysisInput](Modules/group___analysis.md#function-setvec3danalysisinput)**(const std::string & analysis, const std::string & name, const std::vector< [vec3d](Classes/classvec3d.md) > & indata, int index =0) |
 | void | **[PrintAnalysisInputs](Modules/group___analysis.md#function-printanalysisinputs)**(const std::string & analysis_name) |
 | void | **[PrintAnalysisDocs](Modules/group___analysis.md#function-printanalysisdocs)**(const std::string & analysis_name) |
 
@@ -51,7 +51,7 @@ int nanalysis = GetNumAnalysis();
 Print( "Number of registered analyses: " + nanalysis );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 nanalysis = GetNumAnalysis()
 
@@ -82,7 +82,7 @@ for ( int i = 0; i < int( analysis_array.size() ); i++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 analysis_array = ListAnalysis()
 
@@ -126,7 +126,7 @@ for ( int i = 0; i < int( in_names.size() ); i++)
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 analysis_name = "VSPAEROComputeGeometry"
 
@@ -165,7 +165,7 @@ string analysis_name = "VSPAEROComputeGeometry";
 string doc = GetAnalysisDoc( analysis_name );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 analysis_name = "VSPAEROComputeGeometry"
 
@@ -195,7 +195,7 @@ std::string GetAnalysisInputDoc(
 
 Get the documentation string for the particular analysis and input \forcpponly
 
-\endforcpponly \beginPythonOnly
+
 
  
 
@@ -223,7 +223,7 @@ string analysis_name = "VSPAEROComputeGeometry";
 string res_id = ExecAnalysis( analysis_name );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 analysis_name = "VSPAEROComputeGeometry"
 
@@ -286,7 +286,7 @@ for ( int j = 0; j < int( inp_array.size() ); j++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 analysis = "VSPAEROComputeGeometry"
 
@@ -338,7 +338,7 @@ SetIntAnalysisInput( analysis_name, "GeomSet", thick_set, 0);
 SetIntAnalysisInput( analysis_name, "ThinGeomSet", thin_set, 0);
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Analysis: VSPAero Compute Geometry ====//
 analysis_name = "VSPAEROComputeGeometry"
@@ -388,7 +388,7 @@ vinfFCinput[0] = 629;
 SetDoubleAnalysisInput( "ParasiteDrag", "Vinf", vinfFCinput );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 vinfFCinput = list( GetDoubleAnalysisInput( "ParasiteDrag", "Vinf" ) )
 
@@ -431,7 +431,7 @@ fileNameInput[0] = "ParasiteDragExample";
 SetStringAnalysisInput( "ParasiteDrag", "FileName", fileNameInput );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 fileNameInput = GetStringAnalysisInput( "ParasiteDrag", "FileName" )
 
@@ -465,7 +465,7 @@ const std::vector< vec3d > & GetVec3dAnalysisInput(
 
 **Return**: vector<vec3d> Array of analysis input values 
 
-Get the current vec3d values for the particular analysis, input, and data index 
+Get the current [vec3d](Classes/classvec3d.md) values for the particular analysis, input, and data index 
 
 // PlanarSlice
 array<vec3d> norm = GetVec3dAnalysisInput( "PlanarSlice", "Norm" );
@@ -475,7 +475,7 @@ norm[0].set_xyz( 0.23, 0.6, 0.15 );
 SetVec3dAnalysisInput( "PlanarSlice", "Norm", norm );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # PlanarSlice
 norm = GetVec3dAnalysisInput( "PlanarSlice", "Norm" )
@@ -511,7 +511,7 @@ string analysis_name = "VSPAEROComputeGeometry";
 SetAnalysisInputDefaults( analysis_name );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Analysis: VSPAero Compute Geometry ====//
 analysis_name = "VSPAEROComputeGeometry"
@@ -561,7 +561,7 @@ SetIntAnalysisInput( analysis_name, "GeomSet", thick_set, 0);
 SetIntAnalysisInput( analysis_name, "ThinGeomSet", thin_set, 0);
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Analysis: VSPAero Compute Geometry ====//
 analysis_name = "VSPAEROComputeGeometry"
@@ -616,7 +616,7 @@ ycuts.push_back( 8.0 );
 SetDoubleAnalysisInput( analysis_name, "YSlicePosVec", ycuts, 0 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Analysis: CpSlicer ====//
 analysis_name = "CpSlicer"
@@ -664,7 +664,7 @@ fileNameInput[0] = "ParasiteDragExample";
 SetStringAnalysisInput( "ParasiteDrag", "FileName", fileNameInput );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 fileNameInput = GetStringAnalysisInput( "ParasiteDrag", "FileName" )
 
@@ -692,13 +692,13 @@ void SetVec3dAnalysisInput(
 
   * **analysis** string Analysis name 
   * **name** string Input name 
-  * **indata** vector<vec3d> Array of vec3d values to set the input to 
+  * **indata** vector<vec3d> Array of [vec3d](Classes/classvec3d.md) values to set the input to 
   * **index** int Data index 
 
 
 **See**: [GetVec3dAnalysisInput](Modules/group___analysis.md#function-getvec3danalysisinput)
 
-Set the value of a particular analysis input of vec3d type 
+Set the value of a particular analysis input of [vec3d](Classes/classvec3d.md) type 
 
 // PlanarSlice
 array<vec3d> norm = GetVec3dAnalysisInput( "PlanarSlice", "Norm" );
@@ -708,7 +708,7 @@ norm[0].set_xyz( 0.23, 0.6, 0.15 );
 SetVec3dAnalysisInput( "PlanarSlice", "Norm", norm );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # PlanarSlice
 norm = GetVec3dAnalysisInput( "PlanarSlice", "Norm" )
@@ -744,7 +744,7 @@ string analysis_name = "VSPAEROComputeGeometry";
 PrintAnalysisInputs( analysis_name );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Analysis: VSPAero Compute Geometry ====//
 analysis_name = "VSPAEROComputeGeometry"
@@ -779,7 +779,7 @@ string analysis_name = "VSPAEROComputeGeometry";
 PrintAnalysisDocs( analysis_name );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Analysis: VSPAero Compute Geometry ====//
 analysis_name = "VSPAEROComputeGeometry"
@@ -797,4 +797,4 @@ PrintAnalysisDocs( analysis_name )
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:23 +0800

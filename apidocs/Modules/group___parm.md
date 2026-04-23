@@ -69,7 +69,7 @@ string lenid = GetParm( pid, "Length", "Design" );
 if ( !ValidParm( lenid ) )                { Print( "---> Error: API GetParm  " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometry ====//
 pid = AddGeom( "POD" )
@@ -108,7 +108,7 @@ string lenid = GetParm( pid, "Length", "Design" );
 if ( !ValidParm( lenid ) )                { Print( "---> Error: API GetParm  " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometry ====//
 pid = AddGeom( "POD" )
@@ -159,7 +159,7 @@ SetParmVal( wid, 23.0 );
 if ( abs( GetParmVal( wid ) - 23 ) > 1e-6 )                { Print( "---> Error: API Parm Val Set/Get " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Fuselage Geom
 fuseid = AddGeom( "FUSELAGE", "" )
@@ -222,7 +222,7 @@ SetParmVal( wid, 23.0 );
 if ( abs( GetParmVal( wid ) - 23 ) > 1e-6 )                { Print( "---> Error: API Parm Val Set/Get " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Fuselage Geom
 fuseid = AddGeom( "FUSELAGE", "" )
@@ -278,7 +278,7 @@ SetParmValLimits( length, 10.0, 0.001, 1.0e12 );
 SetParmDescript( length, "Total Length of Geom" );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod_id = AddGeom( "POD" )
 
@@ -322,7 +322,7 @@ string parm_id = GetParm( pod_id, "X_Rel_Location", "XForm" );
 SetParmValUpdate( parm_id, 5.0 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometry ====//
 pod_id = AddGeom( "POD" )
@@ -369,7 +369,7 @@ string parm_id = GetParm( pod_id, "X_Rel_Location", "XForm" );
 SetParmValUpdate( parm_id, 5.0 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometry ====//
 pod_id = AddGeom( "POD" )
@@ -416,7 +416,7 @@ SetParmVal( wid, 23.0 );
 if ( abs( GetParmVal( wid ) - 23 ) > 1e-6 )                { Print( "---> Error: API Parm Val Set/Get " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Fuselage Geom
 fuseid = AddGeom( "FUSELAGE", "" )
@@ -475,7 +475,7 @@ SetParmVal( wid, 23.0 );
 if ( abs( GetParmVal( wid ) - 23 ) > 1e-6 )                { Print( "---> Error: API Parm Val Set/Get " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Fuselage Geom
 fuseid = AddGeom( "FUSELAGE", "" )
@@ -522,7 +522,7 @@ string num_blade_id = GetParm( prop_id, "NumBlade", "Design" );
 int num_blade = GetIntParmVal( num_blade_id );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Prop Geometry ====//
 prop_id = AddGeom( "PROP" )
@@ -561,7 +561,7 @@ string rev_flag_id = GetParm( prop_id, "ReverseFlag", "Design" );
 bool reverse_flag = GetBoolParmVal( rev_flag_id );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Prop Geometry ====//
 prop_id = AddGeom( "PROP" )
@@ -612,7 +612,7 @@ SetParmUpperLimit( wid, 13.0 );
 if ( abs( GetParmVal( wid ) - 13 ) > 1e-6 )                { Print( "---> Error: API SetParmUpperLimit " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Fuselage Geom
 fuseid = AddGeom( "FUSELAGE", "" )
@@ -661,7 +661,7 @@ string num_blade_id = GetParm( prop_id, "NumBlade", "Design" );
 double max_blade = GetParmUpperLimit( num_blade_id );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Prop Geometry ====//
 prop_id = AddGeom( "PROP" )
@@ -712,7 +712,7 @@ SetParmLowerLimit( wid, 15.0 );
 if ( abs( GetParmVal( wid ) - 15 ) > 1e-6 )                { Print( "---> Error: API SetParmLowerLimit " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Fuselage Geom
 fuseid = AddGeom( "FUSELAGE", "" )
@@ -761,7 +761,7 @@ string num_blade_id = GetParm( prop_id, "NumBlade", "Design" );
 double min_blade = GetParmLowerLimit( num_blade_id );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Prop Geometry ====//
 prop_id = AddGeom( "PROP" )
@@ -808,7 +808,7 @@ string wid = GetXSecParm( xsec, "RoundedRect_Width" );
 if ( GetParmType( wid ) != PARM_DOUBLE_TYPE )        { Print( "---> Error: API GetParmType " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Fuselage Geom
 fuseid = AddGeom( "FUSELAGE", "" )
@@ -867,7 +867,7 @@ for ( uint i = 0; i < uint(parm_ids.length()); i++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometry ====//
 pod_id = AddGeom( "POD" )
@@ -926,7 +926,7 @@ for ( uint i = 0; i < uint(parm_ids.length()); i++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 veh_id = FindContainer( "Vehicle", 0 )
 
@@ -978,7 +978,7 @@ for ( uint i = 0; i < uint(parm_ids.length()); i++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 veh_id = FindContainer( "Vehicle", 0 )
 
@@ -1031,7 +1031,7 @@ string cid = GetParmContainer( wid );
 if ( cid.size() == 0 )                                { Print( "---> Error: API GetParmContainer " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Fuselage Geom
 fuseid = AddGeom( "FUSELAGE", "" )
@@ -1079,7 +1079,7 @@ SetParmValLimits( length, 10.0, 0.001, 1.0e12 );
 SetParmDescript( length, "Total Length of Geom" );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod_id = AddGeom( "POD" )
 
@@ -1121,7 +1121,7 @@ string desc = GetParmDescript( length );
 Print( desc );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod_id = AddGeom( "POD" )
 
@@ -1167,7 +1167,7 @@ string sym_id = FindParm( wing_id, "Sym_Planar_Flag", "Sym");
 SetParmVal( sym_id, 0.0 ); // Note: bool input not supported in SetParmVal
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Wing Geometry ====//
 wing_id = AddGeom( "WING" )
@@ -1187,4 +1187,4 @@ SetParmVal( sym_id, 0.0 ) # Note: bool input not supported in SetParmVal
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:24 +0800

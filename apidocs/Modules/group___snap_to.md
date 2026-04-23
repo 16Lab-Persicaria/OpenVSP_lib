@@ -55,7 +55,7 @@ Update();
 double min_dist = ComputeMinClearanceDistance( pid, SET_ALL );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 fid = AddGeom( "FUSELAGE", "" )             # Add Fuselage
 
@@ -115,7 +115,7 @@ Update();
 double min_dist = SnapParm( x, 0.1, true, SET_ALL );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #Add Geoms
 fid = AddGeom( "FUSELAGE", "" )             # Add Fuselage
@@ -140,4 +140,4 @@ min_dist = SnapParm( x, 0.1, True, SET_ALL )
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:24 +0800

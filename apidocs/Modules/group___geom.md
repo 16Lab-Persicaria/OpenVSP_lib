@@ -34,8 +34,8 @@ This group of functions is available for adding, deleting, and modifying OpenVSP
 | int | **[GetTotalNumSurfs](Modules/group___geom.md#function-gettotalnumsurfs)**(const std::string & geom_id) |
 | int | **[GetGeomVSPSurfType](Modules/group___geom.md#function-getgeomvspsurftype)**(const std::string & geom_id, int main_surf_ind =0) |
 | int | **[GetGeomVSPSurfCfdType](Modules/group___geom.md#function-getgeomvspsurfcfdtype)**(const std::string & geom_id, int main_surf_ind =0) |
-| vec3d | **[GetGeomBBoxMax](Modules/group___geom.md#function-getgeombboxmax)**(const std::string & geom_id, int main_surf_ind =0, bool ref_frame_is_absolute =true) |
-| vec3d | **[GetGeomBBoxMin](Modules/group___geom.md#function-getgeombboxmin)**(const std::string & geom_id, int main_surf_ind =0, bool ref_frame_is_absolute =true) |
+| [vec3d](Classes/classvec3d.md) | **[GetGeomBBoxMax](Modules/group___geom.md#function-getgeombboxmax)**(const std::string & geom_id, int main_surf_ind =0, bool ref_frame_is_absolute =true) |
+| [vec3d](Classes/classvec3d.md) | **[GetGeomBBoxMin](Modules/group___geom.md#function-getgeombboxmin)**(const std::string & geom_id, int main_surf_ind =0, bool ref_frame_is_absolute =true) |
 | void | **[SplitWingXSec](Modules/group___geom.md#function-splitwingxsec)**(const string & wing_id, int section_index) |
 | void | **[SetDriverGroup](Modules/group___geom.md#function-setdrivergroup)**(const std::string & geom_id, int section_index, int driver_0, int driver_1 =-1, int driver_2 =-1) |
 
@@ -62,7 +62,7 @@ array< string > @type_array = GetGeomTypes();
 if ( type_array[0] != "POD" )                { Print( "---> Error: API GetGeomTypes  " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometries ====//
 pod1 = AddGeom( "POD", "" )
@@ -100,7 +100,7 @@ Add a new Geom of given type as a child of the specified parent. If no parent or
 string wing_id = AddGeom( "WING" );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Wing Geometry ====//
 wing_id = AddGeom( "WING" )
@@ -138,7 +138,7 @@ SetParmVal( pod_id, "X_Rel_Location", "XForm", 5.0 );
 UpdateGeom( pod_id ); // Faster than updating the whole vehicle
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Wing Geometry ====//
 wing_id = AddGeom( "WING" )
@@ -179,7 +179,7 @@ string pod_id = AddGeom( "POD" );
 DeleteGeom( wing_id );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Wing Geometry ====//
 wing_id = AddGeom( "WING" )
@@ -219,7 +219,7 @@ array<string>@ mesh_id_vec = GetStringResults( rid, "Mesh_GeomID" );
 DeleteGeomVec( mesh_id_vec );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometry ====//
 pid = AddGeom( "POD", "" )
@@ -265,7 +265,7 @@ array< string > @geom_ids = FindGeoms();
 if ( geom_ids.size() != 2 )                { Print( "---> Error: API Cut/Paste Geom  " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometries ====//
 pid1 = AddGeom( "POD", "" )
@@ -314,7 +314,7 @@ array< string > @geom_ids = FindGeoms();
 if ( geom_ids.size() != 3 )                { Print( "---> Error: API Copy/Paste Geom  " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometries ====//
 pid1 = AddGeom( "POD", "" )
@@ -363,7 +363,7 @@ array< string > @geom_ids = FindGeoms();
 if ( geom_ids.size() != 2 )                { Print( "---> Error: API Cut/Paste Geom  " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometries ====//
 pid1 = AddGeom( "POD", "" )
@@ -402,7 +402,7 @@ array< string > @geom_ids = FindGeoms();
 if ( geom_ids.size() != 2 )                        { Print( "---> Error: API FindGeoms " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometries ====//
 pod1 = AddGeom( "POD", "" )
@@ -450,7 +450,7 @@ if ( geom_ids.size() != 1 )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometry ====//
 pid = AddGeom( "POD", "" )
@@ -503,7 +503,7 @@ if ( geom_ids[0] != geom_id )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometry ====//
 pid = AddGeom( "POD", "" )
@@ -552,7 +552,7 @@ if ( geom_ids.size() != 1 )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometry ====//
 pid = AddGeom( "POD", "" )
@@ -596,7 +596,7 @@ string name_str = "Geom Name: " + GetGeomName( pid );
 Print( name_str );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometry ====//
 pid = AddGeom( "POD", "" )
@@ -639,7 +639,7 @@ array< string > @parm_array = GetGeomParmIDs( pid );
 if ( parm_array.size() < 1 )            { Print( "---> Error: API GetGeomParmIDs " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometry ====//
 pid = AddGeom( "POD", "" )
@@ -680,7 +680,7 @@ Print( "Geom Type Name: ", false );
 Print( GetGeomTypeName( wing_id ) );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Wing Geometry ====//
 wing_id = AddGeom( "WING" )
@@ -731,7 +731,7 @@ if ( pod2_parent != string("NONE") || pod3_parent != pod1 )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Reparent two PodGeoms ====#
 pod1 = AddGeom( "POD" )
@@ -781,7 +781,7 @@ Print( "Parent ID of Pod #2: ", false );
 Print( GetGeomParent( pod2 ) );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Parent and Child Geometry ====//
 pod1 = AddGeom( "POD" )
@@ -832,7 +832,7 @@ for ( int i = 0; i < int( children.size() ); i++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Parent and Child Geometry ====//
 pod1 = AddGeom( "POD" )
@@ -884,7 +884,7 @@ Print( "Number of Propeller Surfaces: ", false );
 Print( num_surf );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Prop Geometry ====//
 prop_id = AddGeom( "PROP" )
@@ -931,7 +931,7 @@ Print( "Total Number of Wing Surfaces: ", false );
 Print( num_surf );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Wing Geometry ====//
 wing_id = AddGeom( "WING" )
@@ -979,7 +979,7 @@ if ( GetGeomVSPSurfType( wing_id ) != WING_SURF )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Wing Geometry ====//
 wing_id = AddGeom( "WING" )
@@ -1022,7 +1022,7 @@ if ( GetGeomVSPSurfCfdType( wing_id ) != CFD_NORMAL )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Wing Geometry ====//
 wing_id = AddGeom( "WING" )
@@ -1069,7 +1069,7 @@ Update();
 vec3d max_pnt = GetGeomBBoxMax( pid, 0, false );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometry ====//
 pid = AddGeom( "POD" )
@@ -1120,7 +1120,7 @@ Update();
 vec3d min_pnt = GetGeomBBoxMin( pid, 0, false );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometry ====//
 pid = AddGeom( "POD" )
@@ -1164,7 +1164,7 @@ SplitWingXSec( wing_id, 1 );
 Update();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wing_id = AddGeom( "WING", "" )
 
@@ -1218,7 +1218,7 @@ SetParmVal( wing_id, "Tip_Chord", "XSec_1", 1 );
 Update();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Wing Geometry and Set Parms ====//
 wing_id = AddGeom( "WING", "" )
@@ -1244,4 +1244,4 @@ Update()
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:23 +0800

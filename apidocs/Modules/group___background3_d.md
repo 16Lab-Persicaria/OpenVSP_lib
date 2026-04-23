@@ -53,7 +53,7 @@ if ( GetNumBackground3Ds() != nbg + 1 )
 DelBackground3D( bg_id );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 nbg = GetNumBackground3Ds()
 
@@ -93,7 +93,7 @@ if ( GetNumBackground3Ds() != nbg + 1 )
 DelBackground3D( bg_id );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 nbg = GetNumBackground3Ds()
 
@@ -142,7 +142,7 @@ for( int n = 0; n < int( bg_array.length() ); n++ )
 DelAllBackground3Ds();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 nbg = GetNumBackground3Ds()
 
@@ -184,7 +184,7 @@ ShowAllBackground3Ds();
 DelAllBackground3Ds();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Background3D
 AddBackground3D()
@@ -218,7 +218,7 @@ HideAllBackground3Ds();
 DelAllBackground3Ds();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Background3D
 AddBackground3D()
@@ -257,7 +257,7 @@ if ( nbg != 0 )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Background3D
 AddBackground3D()
@@ -306,7 +306,7 @@ if ( GetNumBackground3Ds() != nbg - 1 )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Background3D
 AddBackground3D()
@@ -350,7 +350,7 @@ for( int n = 0; n < int( bg_file_array.length() ); n++ )
 DelAllBackground3Ds();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Background3D
 AddBackground3D()
@@ -394,7 +394,7 @@ for( int n = 0; n < int( bg_file_array.length() ); n++ )
 DelAllBackground3Ds();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Background3D
 AddBackground3D()
@@ -441,7 +441,7 @@ Print( bg_file );
 DelAllBackground3Ds();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Background3D
 bg_id = AddBackground3D()
@@ -486,7 +486,7 @@ Print( bg_file );
 DelAllBackground3Ds();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Background3D
 bg_id = AddBackground3D()
@@ -531,7 +531,7 @@ Print( bg_file );
 DelAllBackground3Ds();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Background3D
 bg_id = AddBackground3D()
@@ -576,7 +576,7 @@ Print( bg_file );
 DelAllBackground3Ds();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Background3D
 bg_id = AddBackground3D()
@@ -598,4 +598,4 @@ DelAllBackground3Ds()
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:23 +0800

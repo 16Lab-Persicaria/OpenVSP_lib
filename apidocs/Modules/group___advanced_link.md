@@ -53,7 +53,7 @@ for( int n = 0 ; n < int( link_array.length() ) ; n++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 link_array = GetAdvLinkNames()
 
@@ -97,7 +97,7 @@ SetAdvLinkCode( indx, "x = 10.0 - len;" );
 BuildAdvLinkScript( indx );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod = AddGeom( "POD", "" )
 length = FindParm( pod, "Length", "Design" )
@@ -156,7 +156,7 @@ for( int n = 0 ; n < int( link_array.length() ) ; n++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod = AddGeom( "POD", "" )
 length = FindParm( pod, "Length", "Design" )
@@ -217,7 +217,7 @@ for( int n = 0 ; n < int( link_array.length() ) ; n++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod = AddGeom( "POD", "" )
 length = FindParm( pod, "Length", "Design" )
@@ -275,7 +275,7 @@ SetAdvLinkCode( indx, "x = 10.0 - len;" );
 BuildAdvLinkScript( indx );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod = AddGeom( "POD", "" )
 length = FindParm( pod, "Length", "Design" )
@@ -328,7 +328,7 @@ SetAdvLinkCode( indx, "x = 10.0 - len;" );
 BuildAdvLinkScript( indx );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod = AddGeom( "POD", "" )
 length = FindParm( pod, "Length", "Design" )
@@ -381,7 +381,7 @@ SetAdvLinkCode( indx, "x = 10.0 - len;" );
 BuildAdvLinkScript( indx );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod = AddGeom( "POD", "" )
 length = FindParm( pod, "Length", "Design" )
@@ -438,7 +438,7 @@ DelAdvLinkInput( indx, "y" );
 BuildAdvLinkScript( indx );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod = AddGeom( "POD", "" )
 length = FindParm( pod, "Length", "Design" )
@@ -501,7 +501,7 @@ DelAdvLinkOutput( indx, "y" );
 BuildAdvLinkScript( indx );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod = AddGeom( "POD", "" )
 length = FindParm( pod, "Length", "Design" )
@@ -565,7 +565,7 @@ for( int n = 0 ; n < int( name_array.length() ) ; n++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod = AddGeom( "POD", "" )
 length = FindParm( pod, "Length", "Design" )
@@ -629,7 +629,7 @@ for( int n = 0 ; n < int( parm_array.length() ) ; n++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod = AddGeom( "POD", "" )
 length = FindParm( pod, "Length", "Design" )
@@ -693,7 +693,7 @@ for( int n = 0 ; n < int( name_array.length() ) ; n++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod = AddGeom( "POD", "" )
 length = FindParm( pod, "Length", "Design" )
@@ -757,7 +757,7 @@ for( int n = 0 ; n < int( parm_array.length() ) ; n++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod = AddGeom( "POD", "" )
 length = FindParm( pod, "Length", "Design" )
@@ -825,7 +825,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod = AddGeom( "POD", "" )
 length = FindParm( pod, "Length", "Design" )
@@ -883,7 +883,7 @@ SetAdvLinkCode( indx, "x = 10.0 - len;" );
 BuildAdvLinkScript( indx );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod = AddGeom( "POD", "" )
 length = FindParm( pod, "Length", "Design" )
@@ -938,7 +938,7 @@ string code = GetAdvLinkCode( indx );
 Print( code );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod = AddGeom( "POD", "" )
 length = FindParm( pod, "Length", "Design" )
@@ -1000,7 +1000,7 @@ Print( code );
 BuildAdvLinkScript( indx );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod = AddGeom( "POD", "" )
 length = FindParm( pod, "Length", "Design" )
@@ -1065,7 +1065,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod = AddGeom( "POD", "" )
 length = FindParm( pod, "Length", "Design" )
@@ -1095,4 +1095,4 @@ else:
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:23 +0800

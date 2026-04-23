@@ -20,9 +20,9 @@ title: vsp
 |                | Name           |
 | -------------- | -------------- |
 | void | **[RegisterCFDMeshAnalyses](Namespaces/namespacevsp.md#function-registercfdmeshanalyses)**() |
-| void | **[LimitedIntersectSurfaces](Namespaces/namespacevsp.md#function-limitedintersectsurfaces)**(const vector< string > & geomvec, vector< vector< vec3d > > & ptchains, vector< vector< vec3d > > & uwchains) |
+| void | **[LimitedIntersectSurfaces](Namespaces/namespacevsp.md#function-limitedintersectsurfaces)**(const vector< string > & geomvec, vector< vector< [vec3d](Classes/classvec3d.md) > > & ptchains, vector< vector< [vec3d](Classes/classvec3d.md) > > & uwchains) |
 | std::string | **[GetResultsEntryDoc](Namespaces/namespacevsp.md#function-getresultsentrydoc)**(const std::string & results_id, const std::string & data_name) |
-| double | **[IntegrateEllipsoidFlow](Namespaces/namespacevsp.md#function-integrateellipsoidflow)**(const vec3d & abc_rad, const int & abc_index) |
+| double | **[IntegrateEllipsoidFlow](Namespaces/namespacevsp.md#function-integrateellipsoidflow)**(const [vec3d](Classes/classvec3d.md) & abc_rad, const int & abc_index) |
 | int | **[GetNumRoutingPts](Namespaces/namespacevsp.md#function-getnumroutingpts)**(const string & routing_id) |
 | string | **[AddRoutingPt](Namespaces/namespacevsp.md#function-addroutingpt)**(const string & routing_id, const string & geom_id, int surf_index) |
 | string | **[InsertRoutingPt](Namespaces/namespacevsp.md#function-insertroutingpt)**(const string & routing_id, int index, const string & geom_id, int surf_index) |
@@ -33,10 +33,10 @@ title: vsp
 | vector< string > | **[GetAllRoutingPtIds](Namespaces/namespacevsp.md#function-getallroutingptids)**(const string & routing_id) |
 | string | **[GetRoutingPtParentID](Namespaces/namespacevsp.md#function-getroutingptparentid)**(const string & pt_id) |
 | void | **[SetRoutingPtParentID](Namespaces/namespacevsp.md#function-setroutingptparentid)**(const string & pt_id, const string & parent_id) |
-| vec3d | **[GetMainRoutingPtCoord](Namespaces/namespacevsp.md#function-getmainroutingptcoord)**(const string & pt_id) |
-| vec3d | **[GetRoutingPtCoord](Namespaces/namespacevsp.md#function-getroutingptcoord)**(const string & routing_id, int index, int symm_index) |
-| vector< vec3d > | **[GetAllRoutingPtCoords](Namespaces/namespacevsp.md#function-getallroutingptcoords)**(const string & routing_id, int symm_index) |
-| vector< vec3d > | **[GetRoutingCurve](Namespaces/namespacevsp.md#function-getroutingcurve)**(const string & routing_id, int symm_index) |
+| [vec3d](Classes/classvec3d.md) | **[GetMainRoutingPtCoord](Namespaces/namespacevsp.md#function-getmainroutingptcoord)**(const string & pt_id) |
+| [vec3d](Classes/classvec3d.md) | **[GetRoutingPtCoord](Namespaces/namespacevsp.md#function-getroutingptcoord)**(const string & routing_id, int index, int symm_index) |
+| vector< [vec3d](Classes/classvec3d.md) > | **[GetAllRoutingPtCoords](Namespaces/namespacevsp.md#function-getallroutingptcoords)**(const string & routing_id, int symm_index) |
+| vector< [vec3d](Classes/classvec3d.md) > | **[GetRoutingCurve](Namespaces/namespacevsp.md#function-getroutingcurve)**(const string & routing_id, int symm_index) |
 
 
 ## Functions Documentation
@@ -120,7 +120,7 @@ SetParmVal(u2, 1.0);
 int npt = GetNumRoutingPts(routing_geom);
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod1 = vsp.AddGeom('POD', '')
 
@@ -189,7 +189,7 @@ string u2 = GetParm( rpt2, "U", "RoutePt");
 SetParmVal(u2, 1.0);
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod1 = vsp.AddGeom('POD', '')
 
@@ -264,7 +264,7 @@ string uPre2 = GetParm( rptPre2, "U", "RoutePt");
 SetParmVal(uPre2, 0.);
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod1 = vsp.AddGeom('POD', '')
 
@@ -334,7 +334,7 @@ SetParmVal(u2, 1.0);
 DelRoutingPt( routing_geom, 1 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod1 = vsp.AddGeom('POD', '')
 
@@ -399,7 +399,7 @@ SetParmVal(u2, 1.0);
 DelAllRoutingPt( routing_geom );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod1 = vsp.AddGeom('POD', '')
 
@@ -468,7 +468,7 @@ SetParmVal(u2, 1.0);
 int newindx = MoveRoutingPt( routing_geom, 1, REORDER_MOVE_DOWN );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod1 = vsp.AddGeom('POD', '')
 
@@ -537,7 +537,7 @@ SetParmVal(u2, 1.0);
 string rid = GetRoutingPtID(routing_geom, 2);
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod1 = vsp.AddGeom('POD', '')
 
@@ -604,7 +604,7 @@ SetParmVal(u2, 1.0);
 array<string> @rpts = GetAllRoutingPtIds(routing_geom);
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod1 = vsp.AddGeom('POD', '')
 
@@ -671,7 +671,7 @@ SetParmVal(u2, 1.0);
 string gid = GetRoutingPtParentID(rpt1);
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod1 = vsp.AddGeom('POD', '')
 
@@ -738,7 +738,7 @@ SetParmVal(u2, 1.0);
 SetRoutingPtParentID(rpt1, pod1);
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod1 = vsp.AddGeom('POD', '')
 
@@ -780,7 +780,7 @@ vec3d GetMainRoutingPtCoord(
 
 **See**: [AddRoutingPt](Namespaces/namespacevsp.md#function-addroutingpt), [DelRoutingPt](Namespaces/namespacevsp.md#function-delroutingpt), [GetRoutingPtCoord](Namespaces/namespacevsp.md#function-getroutingptcoord), [GetAllRoutingPtCoords](Namespaces/namespacevsp.md#function-getallroutingptcoords), [GetRoutingCurve](Namespaces/namespacevsp.md#function-getroutingcurve)
 
-**Return**: vec3d coordinate of main routing point 
+**Return**: [vec3d](Classes/classvec3d.md) coordinate of main routing point 
 
 Get the main coordinate location a routing point. The main location is the location of the base copy before symmetry has been applied. 
 
@@ -806,7 +806,7 @@ Update();
 vec3d p1 = GetMainRoutingPtCoord(rpt1);
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod1 = vsp.AddGeom('POD', '')
 
@@ -853,7 +853,7 @@ vec3d GetRoutingPtCoord(
 
 **See**: [AddRoutingPt](Namespaces/namespacevsp.md#function-addroutingpt), [DelRoutingPt](Namespaces/namespacevsp.md#function-delroutingpt), [GetMainRoutingPtCoord](Namespaces/namespacevsp.md#function-getmainroutingptcoord), [GetAllRoutingPtCoords](Namespaces/namespacevsp.md#function-getallroutingptcoords), [GetRoutingCurve](Namespaces/namespacevsp.md#function-getroutingcurve)
 
-**Return**: vec3d coordinate of routing point 
+**Return**: [vec3d](Classes/classvec3d.md) coordinate of routing point 
 
 Get the coordinate location a routing point in a RoutingGeom. The main location is symm_index = 0. 
 
@@ -879,7 +879,7 @@ Update();
 vec3d p1 = GetRoutingPtCoord(routing_geom, 1, 0);
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod1 = vsp.AddGeom('POD', '')
 
@@ -924,7 +924,7 @@ vector< vec3d > GetAllRoutingPtCoords(
 
 **See**: [AddRoutingPt](Namespaces/namespacevsp.md#function-addroutingpt), [DelRoutingPt](Namespaces/namespacevsp.md#function-delroutingpt), [GetMainRoutingPtCoord](Namespaces/namespacevsp.md#function-getmainroutingptcoord), [GetRoutingPtCoord](Namespaces/namespacevsp.md#function-getroutingptcoord), [GetRoutingCurve](Namespaces/namespacevsp.md#function-getroutingcurve)
 
-**Return**: vector < vec3d > coordinate of routing points along RoutingGeom 
+**Return**: vector < [vec3d](Classes/classvec3d.md) > coordinate of routing points along RoutingGeom 
 
 Get the coordinate locations along a RoutingGeom. The main copy is symm_index = 0. 
 
@@ -950,7 +950,7 @@ Update();
 array<vec3d> pvec = GetAllRoutingPtCoords(routing_geom, 0);
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod1 = vsp.AddGeom('POD', '')
 
@@ -995,7 +995,7 @@ vector< vec3d > GetRoutingCurve(
 
 **See**: [AddRoutingPt](Namespaces/namespacevsp.md#function-addroutingpt), [DelRoutingPt](Namespaces/namespacevsp.md#function-delroutingpt), [GetMainRoutingPtCoord](Namespaces/namespacevsp.md#function-getmainroutingptcoord), [GetRoutingPtCoord](Namespaces/namespacevsp.md#function-getroutingptcoord), [GetAllRoutingPtCoords](Namespaces/namespacevsp.md#function-getallroutingptcoords)
 
-**Return**: vector < vec3d > coordinate of points along RoutingGeom curve 
+**Return**: vector < [vec3d](Classes/classvec3d.md) > coordinate of points along RoutingGeom curve 
 
 Get points along a RoutingGeom. These points will follow the curve of a RoutingGeom with radiused routing points. The main copy is symm_index = 0. 
 
@@ -1021,7 +1021,7 @@ Update();
 array<vec3d> pvec = GetRoutingCurve(routing_geom, 0);
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pod1 = vsp.AddGeom('POD', '')
 
@@ -1054,4 +1054,4 @@ pvec = vsp.GetRoutingCurve(rpt1, 0)
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:23 +0800

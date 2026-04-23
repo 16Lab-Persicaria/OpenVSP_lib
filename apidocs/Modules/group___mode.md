@@ -121,7 +121,7 @@ ApplyModeSettings( mid2 );
 Update();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Illustrating use of Modes requires substantial setup of the model including components, sets, and variable presets.
 #
@@ -277,7 +277,7 @@ Update();
 int nmod = GetNumModes();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Illustrating use of Modes requires substantial setup of the model including components, sets, and variable presets.
 #
@@ -435,7 +435,7 @@ Update();
 array<string> modids = GetAllModes();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Illustrating use of Modes requires substantial setup of the model including components, sets, and variable presets.
 #
@@ -598,7 +598,7 @@ Update();
 DelMode( mid1 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Illustrating use of Modes requires substantial setup of the model including components, sets, and variable presets.
 #
@@ -754,7 +754,7 @@ Update();
 DelAllModes();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Illustrating use of Modes requires substantial setup of the model including components, sets, and variable presets.
 #
@@ -915,7 +915,7 @@ ApplyModeSettings( mid2 );
 Update();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Illustrating use of Modes requires substantial setup of the model including components, sets, and variable presets.
 #
@@ -1076,7 +1076,7 @@ Update();
 ShowOnlyMode( mid1 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Illustrating use of Modes requires substantial setup of the model including components, sets, and variable presets.
 #
@@ -1241,7 +1241,7 @@ ApplyModeSettings( mid2 );
 Update();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Illustrating use of Modes requires substantial setup of the model including components, sets, and variable presets.
 #
@@ -1406,7 +1406,7 @@ Update();
 string gid3 = ModeGetGroup( mid1, 0 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Illustrating use of Modes requires substantial setup of the model including components, sets, and variable presets.
 #
@@ -1573,7 +1573,7 @@ Update();
 string sid6 = ModeGetSetting( mid1, 0 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Illustrating use of Modes requires substantial setup of the model including components, sets, and variable presets.
 #
@@ -1738,7 +1738,7 @@ Update();
 array<string> gids = ModeGetAllGroups( mid1 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Illustrating use of Modes requires substantial setup of the model including components, sets, and variable presets.
 #
@@ -1903,7 +1903,7 @@ Update();
 array<string> sids = ModeGetAllSettings( mid1 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Illustrating use of Modes requires substantial setup of the model including components, sets, and variable presets.
 #
@@ -2068,7 +2068,7 @@ Update();
 RemoveGroupSetting( mid1, 0 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Illustrating use of Modes requires substantial setup of the model including components, sets, and variable presets.
 #
@@ -2231,7 +2231,7 @@ Update();
 RemoveAllGroupSettings( mid1 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Illustrating use of Modes requires substantial setup of the model including components, sets, and variable presets.
 #
@@ -2313,4 +2313,4 @@ RemoveAllGroupSettings( mid1 )
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:24 +0800

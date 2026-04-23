@@ -17,8 +17,8 @@ This group of API functions provides capabilities related to the XSecSurf class 
 | int | **[GetNumXSec](Modules/group___x_sec_surf.md#function-getnumxsec)**(const std::string & xsec_surf_id) |
 | std::string | **[GetXSec](Modules/group___x_sec_surf.md#function-getxsec)**(const std::string & xsec_surf_id, int xsec_index) |
 | void | **[ChangeXSecShape](Modules/group___x_sec_surf.md#function-changexsecshape)**(const std::string & xsec_surf_id, int xsec_index, int type) |
-| void | **[SetXSecSurfGlobalXForm](Modules/group___x_sec_surf.md#function-setxsecsurfglobalxform)**(const std::string & xsec_surf_id, const Matrix4d & mat) |
-| Matrix4d | **[GetXSecSurfGlobalXForm](Modules/group___x_sec_surf.md#function-getxsecsurfglobalxform)**(const std::string & xsec_surf_id) |
+| void | **[SetXSecSurfGlobalXForm](Modules/group___x_sec_surf.md#function-setxsecsurfglobalxform)**(const std::string & xsec_surf_id, const [Matrix4d](Classes/class_matrix4d.md) & mat) |
+| [Matrix4d](Classes/class_matrix4d.md) | **[GetXSecSurfGlobalXForm](Modules/group___x_sec_surf.md#function-getxsecsurfglobalxform)**(const std::string & xsec_surf_id) |
 
 
 ## Functions Documentation
@@ -49,7 +49,7 @@ int num_xsec_surfs = GetNumXSecSurfs( fuseid );
 if ( num_xsec_surfs != 1 )                { Print( "---> Error: API GetNumXSecSurfs  " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Fuselage Geometry ====//
 fuseid = AddGeom( "FUSELAGE", "" )
@@ -89,7 +89,7 @@ string sid = AddGeom( "STACK", "" );
 string xsec_surf = GetXSecSurf( sid, 0 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Stack
 sid = AddGeom( "STACK", "" )
@@ -138,7 +138,7 @@ for ( int i = 0 ; i < num_xsecs ; i++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Stack
 sid = AddGeom( "STACK", "" )
@@ -191,7 +191,7 @@ string xsec_surf = GetXSecSurf( sid, 0 );
 string xsec_1 = GetXSec( xsec_surf, 1 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Stack
 sid = AddGeom( "STACK", "" )
@@ -246,7 +246,7 @@ if ( GetXSecShape( xsec_2 ) != XS_EDIT_CURVE )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Stack
 sid = AddGeom( "STACK", "" )
@@ -311,4 +311,4 @@ Get the global surface transform matrix for given XSecSurf
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:24 +0800

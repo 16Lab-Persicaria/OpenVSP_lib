@@ -59,7 +59,7 @@ string pod1 = AddGeom( "POD", "" );
 string gid = AddVarPresetGroup( "Tess" );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pod1 = AddGeom( "POD", "" )
@@ -98,7 +98,7 @@ string gid = AddVarPresetGroup( "Tess" );
 string sid =AddVarPresetSetting( gid, "Coarse" );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pod1 = AddGeom( "POD", "" )
@@ -141,7 +141,7 @@ string p1 = FindParm( pod1, "Tess_U", "Shape" );
 AddVarPresetParm( gid, p1 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pod1 = AddGeom( "POD", "" )
@@ -188,7 +188,7 @@ AddVarPresetParm( gid, p1 );
 DeleteVarPresetGroup( gid );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pod1 = AddGeom( "POD", "" )
@@ -239,7 +239,7 @@ AddVarPresetParm( gid, p1 );
 DeleteVarPresetSetting( gid, sid );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pod1 = AddGeom( "POD", "" )
@@ -290,7 +290,7 @@ AddVarPresetParm( gid, p1 );
 DeleteVarPresetParm( gid, p1 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pod1 = AddGeom( "POD", "" )
@@ -345,7 +345,7 @@ AddVarPresetParm( gid, p1 );
 SetVarPresetParmVal( gid, sid, p1, 51 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pod1 = AddGeom( "POD", "" )
@@ -400,7 +400,7 @@ AddVarPresetParm( gid, p1 );
 double val = GetVarPresetParmVal( gid, sid, p1 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pod1 = AddGeom( "POD", "" )
@@ -445,7 +445,7 @@ string gid = AddVarPresetGroup( "Tess" );
 string name = GetGroupName( gid );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pod1 = AddGeom( "POD", "" )
@@ -486,7 +486,7 @@ string sid = AddVarPresetSetting( gid, "Coarse" );
 string name = GetSettingName( sid );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pod1 = AddGeom( "POD", "" )
@@ -527,7 +527,7 @@ string gid = AddVarPresetGroup( "Tess" );
 SetGroupName( gid, "Resolution" );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pod1 = AddGeom( "POD", "" )
@@ -568,7 +568,7 @@ string sid = AddVarPresetSetting( gid, "Coarse" );
 SetSettingName( sid, "Low" );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pod1 = AddGeom( "POD", "" )
@@ -608,7 +608,7 @@ AddVarPresetParm( gid, p1 );
 array <string> group_ids = GetVarPresetGroups();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pod1 = AddGeom( "POD", "" )
@@ -659,7 +659,7 @@ AddVarPresetParm( gid, p1 );
 array <string> settingids = GetVarPresetSettings( gid );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pod1 = AddGeom( "POD", "" )
@@ -710,7 +710,7 @@ AddVarPresetParm( gid, p1 );
 array <string> parmids = GetVarPresetParmIDs( gid );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pod1 = AddGeom( "POD", "" )
@@ -761,7 +761,7 @@ AddVarPresetParm( gid, p1 );
 array < double > parmval_vec = GetVarPresetParmVals( sid );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pod1 = AddGeom( "POD", "" )
@@ -814,7 +814,7 @@ array <double> vals = { 45 };
 SetVarPresetParmVals( sid, vals );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pod1 = AddGeom( "POD", "" )
@@ -867,7 +867,7 @@ AddVarPresetParm( gid, p1 );
 SaveVarPresetParmVals( gid, sid );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pod1 = AddGeom( "POD", "" )
@@ -920,7 +920,7 @@ ApplyVarPresetSetting( gid, sid );
 Update();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pod1 = AddGeom( "POD", "" )
@@ -947,4 +947,4 @@ Update()
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:24 +0800

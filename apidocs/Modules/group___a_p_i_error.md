@@ -48,7 +48,7 @@ ErrorObj err = PopLastError();
 if ( err.GetErrorCode() != VSP_CANT_FIND_PARM )            { Print( "---> Error: API PopLast" ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
     ErrorObj err = PopLastError()
 
@@ -77,7 +77,7 @@ while ( GetNumTotalErrors() > 0 )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
     #==== Check For API Errors ====//
 while  GetNumTotalErrors() > 0 :
@@ -113,7 +113,7 @@ if ( !GetErrorLastCallFlag() )                        { Print( "---> Error: API 
 PrintOnErrors();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
     #==== Force API to silence error messages ====//
 SilenceErrors()
@@ -160,7 +160,7 @@ while ( GetNumTotalErrors() > 0 )
 PrintOnErrors();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
     #==== Force API to silence error messages ====//
 SilenceErrors()
@@ -208,7 +208,7 @@ while ( GetNumTotalErrors() > 0 )
 PrintOnErrors();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
     #==== Force API to silence error messages ====//
 SilenceErrors()
@@ -256,7 +256,7 @@ Print( err.GetErrorString() );
 PrintOnErrors();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
     #==== Force API to silence error messages ====//
 SilenceErrors()
@@ -297,7 +297,7 @@ SetParmVal( "ABCDEFG", "Test_Name", "Test_Group", 123.4 );
 PrintOnErrors();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
     #==== Force API to silence error messages ====//
 SilenceErrors()
@@ -333,7 +333,7 @@ SetParmVal( "ABCDEFG", "Test_Name", "Test_Group", 123.4 );
 PrintOnErrors();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
     #==== Force API to silence error messages ====//
 SilenceErrors()
@@ -354,4 +354,4 @@ PrintOnErrors()
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:23 +0800

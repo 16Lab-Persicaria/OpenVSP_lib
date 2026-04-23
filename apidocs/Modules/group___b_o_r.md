@@ -14,16 +14,16 @@ This group of API functions provides capabilities related to the body of revolut
 | -------------- | -------------- |
 | void | **[ChangeBORXSecShape](Modules/group___b_o_r.md#function-changeborxsecshape)**(const string & bor_id, int type) |
 | int | **[GetBORXSecShape](Modules/group___b_o_r.md#function-getborxsecshape)**(const string & bor_id) |
-| std::vector< vec3d > | **[ReadBORFileXSec](Modules/group___b_o_r.md#function-readborfilexsec)**(const std::string & bor_id, const std::string & file_name) |
-| void | **[SetBORXSecPnts](Modules/group___b_o_r.md#function-setborxsecpnts)**(const std::string & bor_id, std::vector< vec3d > & pnt_vec) |
-| vec3d | **[ComputeBORXSecPnt](Modules/group___b_o_r.md#function-computeborxsecpnt)**(const std::string & bor_id, double fract) |
-| vec3d | **[ComputeBORXSecTan](Modules/group___b_o_r.md#function-computeborxsectan)**(const std::string & bor_id, double fract) |
+| std::vector< [vec3d](Classes/classvec3d.md) > | **[ReadBORFileXSec](Modules/group___b_o_r.md#function-readborfilexsec)**(const std::string & bor_id, const std::string & file_name) |
+| void | **[SetBORXSecPnts](Modules/group___b_o_r.md#function-setborxsecpnts)**(const std::string & bor_id, std::vector< [vec3d](Classes/classvec3d.md) > & pnt_vec) |
+| [vec3d](Classes/classvec3d.md) | **[ComputeBORXSecPnt](Modules/group___b_o_r.md#function-computeborxsecpnt)**(const std::string & bor_id, double fract) |
+| [vec3d](Classes/classvec3d.md) | **[ComputeBORXSecTan](Modules/group___b_o_r.md#function-computeborxsectan)**(const std::string & bor_id, double fract) |
 | void | **[ReadBORFileAirfoil](Modules/group___b_o_r.md#function-readborfileairfoil)**(const std::string & bor_id, const std::string & file_name) |
-| void | **[SetBORAirfoilUpperPnts](Modules/group___b_o_r.md#function-setborairfoilupperpnts)**(const std::string & bor_id, const std::vector< vec3d > & up_pnt_vec) |
-| void | **[SetBORAirfoilLowerPnts](Modules/group___b_o_r.md#function-setborairfoillowerpnts)**(const std::string & bor_id, const std::vector< vec3d > & low_pnt_vec) |
-| void | **[SetBORAirfoilPnts](Modules/group___b_o_r.md#function-setborairfoilpnts)**(const std::string & bor_id, const std::vector< vec3d > & up_pnt_vec, const std::vector< vec3d > & low_pnt_vec) |
-| std::vector< vec3d > | **[GetBORAirfoilUpperPnts](Modules/group___b_o_r.md#function-getborairfoilupperpnts)**(const std::string & bor_id) |
-| std::vector< vec3d > | **[GetBORAirfoilLowerPnts](Modules/group___b_o_r.md#function-getborairfoillowerpnts)**(const std::string & bor_id) |
+| void | **[SetBORAirfoilUpperPnts](Modules/group___b_o_r.md#function-setborairfoilupperpnts)**(const std::string & bor_id, const std::vector< [vec3d](Classes/classvec3d.md) > & up_pnt_vec) |
+| void | **[SetBORAirfoilLowerPnts](Modules/group___b_o_r.md#function-setborairfoillowerpnts)**(const std::string & bor_id, const std::vector< [vec3d](Classes/classvec3d.md) > & low_pnt_vec) |
+| void | **[SetBORAirfoilPnts](Modules/group___b_o_r.md#function-setborairfoilpnts)**(const std::string & bor_id, const std::vector< [vec3d](Classes/classvec3d.md) > & up_pnt_vec, const std::vector< [vec3d](Classes/classvec3d.md) > & low_pnt_vec) |
+| std::vector< [vec3d](Classes/classvec3d.md) > | **[GetBORAirfoilUpperPnts](Modules/group___b_o_r.md#function-getborairfoilupperpnts)**(const std::string & bor_id) |
+| std::vector< [vec3d](Classes/classvec3d.md) > | **[GetBORAirfoilLowerPnts](Modules/group___b_o_r.md#function-getborairfoillowerpnts)**(const std::string & bor_id) |
 | std::vector< double > | **[GetBORUpperCSTCoefs](Modules/group___b_o_r.md#function-getboruppercstcoefs)**(const std::string & bor_id) |
 | std::vector< double > | **[GetBORLowerCSTCoefs](Modules/group___b_o_r.md#function-getborlowercstcoefs)**(const std::string & bor_id) |
 | int | **[GetBORUpperCSTDegree](Modules/group___b_o_r.md#function-getboruppercstdegree)**(const std::string & bor_id) |
@@ -67,7 +67,7 @@ ChangeBORXSecShape( bor_id, XS_ROUNDED_RECTANGLE );
 if ( GetBORXSecShape( bor_id ) != XS_ROUNDED_RECTANGLE ) { Print( "ERROR: ChangeBORXSecShape" ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Body of Recolution
 bor_id = AddGeom( "BODYOFREVOLUTION", "" )
@@ -106,7 +106,7 @@ ChangeBORXSecShape( bor_id, XS_ROUNDED_RECTANGLE );
 if ( GetBORXSecShape( bor_id ) != XS_ROUNDED_RECTANGLE ) { Print( "ERROR: GetBORXSecShape" ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Body of Recolution
 bor_id = AddGeom( "BODYOFREVOLUTION", "" )
@@ -147,7 +147,7 @@ ChangeBORXSecShape( bor_id, XS_FILE_FUSE );
 array< vec3d > @vec_array = ReadBORFileXSec( bor_id, "TestXSec.fxs" );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Body of Recolution
 bor_id = AddGeom( "BODYOFREVOLUTION", "" )
@@ -194,7 +194,7 @@ if ( vec_array.size() > 0 )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Body of Recolution
 bor_id = AddGeom( "BODYOFREVOLUTION", "" )
@@ -229,7 +229,7 @@ vec3d ComputeBORXSecPnt(
   * **fract** double Curve parameter value (range: 0 - 1) 
 
 
-**Return**: vec3d Coordinate point on curve 
+**Return**: [vec3d](Classes/classvec3d.md) Coordinate point on curve 
 
 Compute 3D coordinate for a point on a BOR XSecCurve given the parameter value (U) along the curve 
 
@@ -242,7 +242,7 @@ double u_fract = 0.25;
 vec3d pnt = ComputeBORXSecPnt( bor_id, u_fract );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Geom ====//
 # Add Body of Recolution
@@ -272,7 +272,7 @@ vec3d ComputeBORXSecTan(
   * **fract** double Curve parameter value (range: 0 - 1) 
 
 
-**Return**: vec3d Tangent vector on curve 
+**Return**: [vec3d](Classes/classvec3d.md) Tangent vector on curve 
 
 Compute the tangent vector of a point on a BOR XSecCurve given the parameter value (U) along the curve 
 
@@ -284,7 +284,7 @@ double u_fract = 0.25;
 vec3d tan = ComputeBORXSecTan( bor_id, u_fract );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Body of Recolution
 bor_id = AddGeom( "BODYOFREVOLUTION", "" )
@@ -323,7 +323,7 @@ ChangeBORXSecShape( bor_id, XS_FILE_AIRFOIL );
 ReadBORFileAirfoil( bor_id, "airfoil/N0012_VSP.af" );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Body of Recolution
 bor_id = AddGeom( "BODYOFREVOLUTION", "" )
@@ -371,7 +371,7 @@ for ( int i = 0 ; i < int( up_array.size() ) ; i++ )
 SetBORAirfoilUpperPnts( bor_id, up_array );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Body of Recolution
 bor_id = AddGeom( "BODYOFREVOLUTION", "" )
@@ -427,7 +427,7 @@ for ( int i = 0 ; i < int( low_array.size() ) ; i++ )
 SetBORAirfoilLowerPnts( bor_id, low_array );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Body of Recolution
 bor_id = AddGeom( "BODYOFREVOLUTION", "" )
@@ -463,7 +463,7 @@ void SetBORAirfoilPnts(
 
   * **bor_id** string Body of revolution Geom ID 
   * **up_pnt_vec** vector<vec3d> Vector of points defining the upper surface of the airfoil 
-  * **low_pnt_vec** vector<_>vec3d> Vector of points defining the lower surface of the airfoil 
+  * **low_pnt_vec** vector<_>[vec3d](Classes/classvec3d.md)> Vector of points defining the lower surface of the airfoil 
 
 
 Set the upper and lower points for an airfoil on a BOR. The BOR XSecCurve must be of type XS_FILE_AIRFOIL. 
@@ -489,7 +489,7 @@ for ( int i = 0 ; i < int( up_array.size() ) ; i++ )
 SetBORAirfoilPnts( bor_id, up_array, low_array );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Body of Recolution
 bor_id = AddGeom( "BODYOFREVOLUTION", "" )
@@ -544,7 +544,7 @@ ReadBORFileAirfoil( bor_id, "airfoil/N0012_VSP.af" );
 array< vec3d > @up_array = GetBORAirfoilUpperPnts( bor_id );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Body of Recolution
 bor_id = AddGeom( "BODYOFREVOLUTION", "" )
@@ -589,7 +589,7 @@ ReadBORFileAirfoil( bor_id, "airfoil/N0012_VSP.af" );
 array< vec3d > @low_array = GetBORAirfoilLowerPnts( bor_id );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Body of Recolution
 bor_id = AddGeom( "BODYOFREVOLUTION", "" )
@@ -835,4 +835,4 @@ Fit a CST airfoil for an existing airfoil of a BOR of type XS_FOUR_SERIES, XS_SI
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:23 +0800

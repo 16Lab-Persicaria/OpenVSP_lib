@@ -53,7 +53,7 @@ for ( int i = 0; i < int( ctr_arr.size() ); i++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 ctr_arr = FindContainers()
 
@@ -92,7 +92,7 @@ array<string> @ctr_arr = FindContainersWithName( "UserParms" );
 if ( ctr_arr.size() > 0 )            { Print( ( "UserParms Parm Container ID: " + ctr_arr[0] ) ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 ctr_arr = FindContainersWithName( "UserParms" )
 
@@ -128,7 +128,7 @@ Get the ID of a Parm Container with specified name at input index
 string veh_id = FindContainer( "Vehicle", 0 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #===== Get Vehicle Parm Container ID ====//
 veh_id = FindContainer( "Vehicle", 0 )
@@ -160,7 +160,7 @@ string veh_id = FindContainer( "Vehicle", 0 );
 if ( GetContainerName( veh_id ) != "Vehicle" )         { Print( "---> Error: API GetContainerName" ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 veh_id = FindContainer( "Vehicle", 0 )
 
@@ -201,7 +201,7 @@ for ( int i = 0; i < int( grp_arr.size() ); i++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 user_ctr = FindContainer( "UserParms", 0 )
 
@@ -258,7 +258,7 @@ for ( uint i = 0; i < uint(parm_ids.length()); i++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometry ====//
 pod_id = AddGeom( "POD" )
@@ -299,7 +299,7 @@ Get the ID of the Vehicle Parm Container
 string veh_id = GetVehicleID();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #===== Get Vehicle Parm Container ID ====//
 veh_id = GetVehicleID()
@@ -322,7 +322,7 @@ Get the number of user parameters
 int n = GetNumUserParms();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 n = GetNumUserParms()
 ```
@@ -344,7 +344,7 @@ Get the number of pre-defined user parameters
 int n = GetNumPredefinedUserParms();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 n = GetNumPredefinedUserParms()
 ```
@@ -375,7 +375,7 @@ for ( int i = 0; i < int( id_arr.size() ); i++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 id_arr = GetAllUserParms()
 
@@ -405,7 +405,7 @@ Get the user parm container ID
 string up_id = GetUserParmContainer();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 up_id = GetUserParmContainer()
 ```
@@ -444,7 +444,7 @@ SetParmValLimits( length, 10.0, 0.001, 1.0e12 );
 SetParmDescript( length, "Length user parameter" );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 length = AddUserParm( PARM_DOUBLE_TYPE, "Length", "Design" )
 
@@ -476,7 +476,7 @@ if ( int( id_arr.size() ) > n )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 n = GetNumPredefinedUserParms()
 id_arr = GetAllUserParms()
@@ -500,7 +500,7 @@ Get the user parm container ID
 DeleteAllUserParm();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 DeleteAllUserParm()
 ```
@@ -514,4 +514,4 @@ DeleteAllUserParm()
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:24 +0800

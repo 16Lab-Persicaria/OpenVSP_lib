@@ -77,7 +77,7 @@ deflection_gain_id = FindParm( control_group_settings_container_id, "Surf_" + ai
 string deflection_angle_id = FindParm( control_group_settings_container_id, "DeflectionAngle", "ControlSurfaceGroup_0" );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" )                             # Add Wing
 
@@ -141,7 +141,7 @@ int num_group = GetNumControlSurfaceGroups();
 if ( num_group != 1 ) { Print( "Error: CreateVSPAEROControlSurfaceGroup" ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" )                             # Add Wing
 
@@ -182,7 +182,7 @@ int group_index = CreateVSPAEROControlSurfaceGroup(); // Empty control surface g
 AddAllToVSPAEROControlSurfaceGroup( group_index );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" )                             # Add Wing
 
@@ -223,7 +223,7 @@ AddAllToVSPAEROControlSurfaceGroup( group_index );
 RemoveAllFromVSPAEROControlSurfaceGroup( group_index ); // Empty control surface group
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" )                             # Add Wing
 
@@ -276,7 +276,7 @@ for ( int i = 0; i < int( cs_name_vec.size() ); i++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" )                             # Add Wing
 
@@ -326,7 +326,7 @@ for ( int i = 0; i < int( cs_name_vec.size() ); i++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" )                             # Add Wing
 
@@ -378,7 +378,7 @@ cs_ind_vec[0] = 1;
 AddSelectedToCSGroup( cs_ind_vec, group_index ); // Add the first available control surface to the group
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" ) # Add Wing
 
@@ -427,7 +427,7 @@ Print( "CS Group name: ", false );
 Print( GetVSPAEROControlGroupName( group_index ) );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" ) # Add Wing
 
@@ -474,7 +474,7 @@ Print( "CS Group name: ", false );
 Print( GetVSPAEROControlGroupName( group_index ) );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" ) # Add Wing
 
@@ -535,7 +535,7 @@ for ( int i = 0; i < int( cs_name_vec.size() ); i++ )
 AddSelectedToCSGroup( cs_ind_vec, group_index ); // Add all available control surfaces to the group
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" ) # Add Wing
 
@@ -605,7 +605,7 @@ remove_cs_ind_vec[0] = 1;
 RemoveSelectedFromCSGroup( remove_cs_ind_vec, group_index ); // Remove the first control surface
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" ) # Add Wing
 
@@ -663,7 +663,7 @@ int num_group = GetNumControlSurfaceGroups();
 if ( num_group != 2 ) { Print( "Error: GetNumControlSurfaceGroups" ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" )                             # Add Wing
 
@@ -695,4 +695,4 @@ if  num_group != 2 : print( "Error: GetNumControlSurfaceGroups" )
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:23 +0800

@@ -14,8 +14,8 @@ The functions in this group allow for sets to be scaled, rotated, and translated
 | -------------- | -------------- |
 | void | **[ScaleSet](Modules/group___group_mod.md#function-scaleset)**(int set_index, double scale) |
 | void | **[RotateSet](Modules/group___group_mod.md#function-rotateset)**(int set_index, double x_rot_deg, double y_rot_deg, double z_rot_deg) |
-| void | **[TranslateSet](Modules/group___group_mod.md#function-translateset)**(int set_index, const vec3d & translation_vec) |
-| void | **[TransformSet](Modules/group___group_mod.md#function-transformset)**(int set_index, const vec3d & translation_vec, double x_rot_deg, double y_rot_deg, double z_rot_deg, double scale, bool scale_translations_flag) |
+| void | **[TranslateSet](Modules/group___group_mod.md#function-translateset)**(int set_index, const [vec3d](Classes/classvec3d.md) & translation_vec) |
+| void | **[TransformSet](Modules/group___group_mod.md#function-transformset)**(int set_index, const [vec3d](Classes/classvec3d.md) & translation_vec, double x_rot_deg, double y_rot_deg, double z_rot_deg, double scale, bool scale_translations_flag) |
 
 
 ## Functions Documentation
@@ -47,7 +47,7 @@ SetSetFlag( fuseid, 3, true );
 ScaleSet( 3, 2.0 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Fuselage Geom
 fuseid = AddGeom( "FUSELAGE" )
@@ -92,7 +92,7 @@ SetSetFlag( fuseid, 3, true );
 RotateSet( 3, 0, 90, 0 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Fuselage Geom
 fuseid = AddGeom( "FUSELAGE" )
@@ -133,7 +133,7 @@ SetSetFlag( fuseid, 3, true );
 TranslateSet( 3, vec3d( 2, 3, 0 ) );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Fuselage Geom
 fuseid = AddGeom( "FUSELAGE" )
@@ -186,7 +186,7 @@ SetSetFlag( fuseid, 3, true );
 TransformSet( 3, vec3d( 2, 3, 0 ), 0, 90, 0, 2.0, true );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Fuselage Geom
 fuseid = AddGeom( "FUSELAGE" )
@@ -206,4 +206,4 @@ TransformSet( 3, vec3d( 2, 3, 0 ), 0, 90, 0, 2.0, True )
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:23 +0800

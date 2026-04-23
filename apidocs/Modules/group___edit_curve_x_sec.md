@@ -15,11 +15,11 @@ Functions for modifying XSecs of type XS_EDIT_CURVE are defined here. Click here
 | void | **[EditXSecInitShape](Modules/group___edit_curve_x_sec.md#function-editxsecinitshape)**(const std::string & xsec_id) |
 | void | **[EditXSecConvertTo](Modules/group___edit_curve_x_sec.md#function-editxsecconvertto)**(const std::string & xsec_id, const int & newtype) |
 | std::vector< double > | **[GetEditXSecUVec](Modules/group___edit_curve_x_sec.md#function-geteditxsecuvec)**(const std::string & xsec_id) |
-| std::vector< vec3d > | **[GetEditXSecCtrlVec](Modules/group___edit_curve_x_sec.md#function-geteditxsecctrlvec)**(const std::string & xsec_id, bool non_dimensional =true) |
-| void | **[SetEditXSecPnts](Modules/group___edit_curve_x_sec.md#function-seteditxsecpnts)**(const std::string & xsec_id, const std::vector< double > & u_vec, const std::vector< vec3d > & control_pts, const std::vector< double > & r_vec) |
+| std::vector< [vec3d](Classes/classvec3d.md) > | **[GetEditXSecCtrlVec](Modules/group___edit_curve_x_sec.md#function-geteditxsecctrlvec)**(const std::string & xsec_id, bool non_dimensional =true) |
+| void | **[SetEditXSecPnts](Modules/group___edit_curve_x_sec.md#function-seteditxsecpnts)**(const std::string & xsec_id, const std::vector< double > & u_vec, const std::vector< [vec3d](Classes/classvec3d.md) > & control_pts, const std::vector< double > & r_vec) |
 | void | **[EditXSecDelPnt](Modules/group___edit_curve_x_sec.md#function-editxsecdelpnt)**(const std::string & xsec_id, const int & indx) |
 | int | **[EditXSecSplit01](Modules/group___edit_curve_x_sec.md#function-editxsecsplit01)**(const std::string & xsec_id, const double & u) |
-| void | **[MoveEditXSecPnt](Modules/group___edit_curve_x_sec.md#function-moveeditxsecpnt)**(const std::string & xsec_id, const int & indx, const vec3d & new_pnt) |
+| void | **[MoveEditXSecPnt](Modules/group___edit_curve_x_sec.md#function-moveeditxsecpnt)**(const std::string & xsec_id, const int & indx, const [vec3d](Classes/classvec3d.md) & new_pnt) |
 | void | **[ConvertXSecToEdit](Modules/group___edit_curve_x_sec.md#function-convertxsectoedit)**(const std::string & geom_id, const int & indx =0) |
 | std::vector< bool > | **[GetEditXSecFixedUVec](Modules/group___edit_curve_x_sec.md#function-geteditxsecfixeduvec)**(const std::string & xsec_id) |
 | void | **[SetEditXSecFixedUVec](Modules/group___edit_curve_x_sec.md#function-seteditxsecfixeduvec)**(const std::string & xsec_id, std::vector< bool > fixed_u_vec) |
@@ -63,7 +63,7 @@ EditXSecConvertTo( xsec_2, LINEAR );
 EditXSecInitShape( xsec_2 ); // Change back to default ellipse
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Stack
 sid = AddGeom( "STACK", "" )
@@ -120,7 +120,7 @@ string xsec_1 = GetXSec( xsec_surf, 1 );
 EditXSecConvertTo( xsec_1, LINEAR );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Stack
 sid = AddGeom( "STACK", "" )
@@ -180,7 +180,7 @@ if ( u_vec[1] - 0.25 > 1e-6 )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Stack
 sid = AddGeom( "STACK", "" )
@@ -223,7 +223,7 @@ std::vector< vec3d > GetEditXSecCtrlVec(
 
 **Return**: Array of control points 
 
-Get the control point vector for an EditCurveXSec. Note, the returned array of vec3d values will be represented in 2D with Z set to 0. 
+Get the control point vector for an EditCurveXSec. Note, the returned array of [vec3d](Classes/classvec3d.md) values will be represented in 2D with Z set to 0. 
 
 // Add Stack
 string sid = AddGeom( "STACK", "" );
@@ -242,7 +242,7 @@ array < vec3d > xsec1_pts = GetEditXSecCtrlVec( xsec_1, true ); // The returned 
 Print( "Normalized Bottom Point of XSecCurve: " + xsec1_pts[3].x() + ", " + xsec1_pts[3].y() + ", " + xsec1_pts[3].z() );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Stack
 sid = AddGeom( "STACK", "" )
@@ -339,7 +339,7 @@ if ( dist( new_pnts[3], xsec2_pts[3] ) > 1e-6 )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Stack
 sid = AddGeom( "STACK", "" )
@@ -425,7 +425,7 @@ if ( old_pnts.size() - new_pnts.size() != 3  )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Stack
 sid = AddGeom( "STACK", "" )
@@ -500,7 +500,7 @@ if ( new_pnts.size() - old_pnts.size() != 3  )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Stack
 sid = AddGeom( "STACK", "" )
@@ -582,7 +582,7 @@ if ( dist( new_pnt, new_pnts[move_pnt_ind] ) > 1e-6 )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Stack
 sid = AddGeom( "STACK", "" )
@@ -654,7 +654,7 @@ string xsec_1 = GetXSec( xsec_surf, 1 );
 array < vec3d > xsec1_pts = GetEditXSecCtrlVec( xsec_1, true ); // The returned control points will not be scaled by width and height
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Stack
 sid = AddGeom( "STACK", "" )
@@ -717,7 +717,7 @@ SetEditXSecFixedUVec( xsec_1, fixed_u_vec );
 ReparameterizeEditXSec( xsec_1 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Wing
 wid = AddGeom( "WING" )
@@ -782,7 +782,7 @@ SetEditXSecFixedUVec( xsec_1, fixed_u_vec );
 ReparameterizeEditXSec( xsec_1 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Wing
 wid = AddGeom( "WING" )
@@ -845,7 +845,7 @@ SetEditXSecFixedUVec( xsec_1, fixed_u_vec );
 ReparameterizeEditXSec( xsec_1 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Wing
 wid = AddGeom( "WING" )
@@ -876,4 +876,4 @@ ReparameterizeEditXSec( xsec_1 )
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:23 +0800

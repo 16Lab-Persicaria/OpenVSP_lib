@@ -65,7 +65,7 @@ string ss_line_id = AddSubSurf( wid, SS_LINE );                      // Add Sub 
 SetParmVal( wid, "Const_Line_Value", "SubSurface_1", 0.4 );     // Change Location
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" )                             # Add Wing
 
@@ -111,7 +111,7 @@ Print( " = ", false );
 Print( GetSubSurf( wid, 1 ) );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" ) # Add Wing
 
@@ -162,7 +162,7 @@ Print( " = ", false );
 Print( GetSubSurf( wid, 1 ) );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" ) # Add Wing
 
@@ -214,7 +214,7 @@ string num_str = string("Number of SubSurfaces: ") + formatInt( num_ss, '' ) + s
 Print( num_str );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" )                             # Add Wing
 
@@ -267,7 +267,7 @@ string num_str = string("Number of SubSurfaces: ") + formatInt( num_ss, '' ) + s
 Print( num_str );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" )                             # Add Wing
 
@@ -317,7 +317,7 @@ string new_name = string("New_SS_Rec_Name");
 SetSubSurfName( wid, ss_rec_id, new_name );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" )                             # Add Wing
 
@@ -358,7 +358,7 @@ string new_name = string("New_SS_Rec_Name");
 SetSubSurfName( ss_rec_id, new_name );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" )                             # Add Wing
 
@@ -403,7 +403,7 @@ string name_str = string("Current Name of SS_Rectangle: ") + rec_name + string("
 Print( name_str );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" )                             # Add Wing
 
@@ -448,7 +448,7 @@ string name_str = string("Current Name of SS_Rectangle: ") + rec_name + string("
 Print( name_str );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" )                             # Add Wing
 
@@ -494,7 +494,7 @@ string ind_str = string("Index of SS_Rectangle: ") + ind + string("\n");
 Print( ind_str );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" )                             # Add Wing
 
@@ -554,7 +554,7 @@ id_type_str += string("\n");
 Print( id_type_str );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" )                             # Add Wing
 
@@ -625,7 +625,7 @@ string num_str = string("Number of SubSurfaces: ") + num_ss + string("\n");
 Print( num_str );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" )                             # Add Wing
 
@@ -687,7 +687,7 @@ id_type_str += string("\n");
 Print( id_type_str );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" )                             # Add Wing
 
@@ -750,7 +750,7 @@ for ( uint i = 0; i < uint(parm_id_vec.length()); i++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 wid = AddGeom( "WING", "" )                             # Add Wing
 
@@ -804,7 +804,7 @@ SetIntersectSubSurfGeomID( sub_id, p2id );
 IntersectSubSurf( sub_id );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pid = AddGeom( "POD", "" )
 p2id = AddGeom( "POD", "" )
@@ -863,7 +863,7 @@ SetIntersectSubSurfGeomID( sub_id, p2id );
 IntersectSubSurf( sub_id );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pid = AddGeom( "POD", "" )
 p2id = AddGeom( "POD", "" )
@@ -892,4 +892,4 @@ IntersectSubSurf( sub_id )
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:24 +0800

@@ -30,7 +30,7 @@ The following group of functions allow for the OpenVSP GUI to be manipulated thr
 | void | **[SetGeomWireColor](Modules/group___visualization.md#function-setgeomwirecolor)**(const string & geom_id, int r, int g, int b) |
 | void | **[SetGeomDisplayType](Modules/group___visualization.md#function-setgeomdisplaytype)**(const string & geom_id, int type) |
 | void | **[SetGeomMaterialName](Modules/group___visualization.md#function-setgeommaterialname)**(const string & geom_id, const string & name) |
-| void | **[AddMaterial](Modules/group___visualization.md#function-addmaterial)**(const string & name, const vec3d & ambient, const vec3d & diffuse, const vec3d & specular, const vec3d & emissive, const double & alpha, const double & shininess) |
+| void | **[AddMaterial](Modules/group___visualization.md#function-addmaterial)**(const string & name, const [vec3d](Classes/classvec3d.md) & ambient, const [vec3d](Classes/classvec3d.md) & diffuse, const [vec3d](Classes/classvec3d.md) & specular, const [vec3d](Classes/classvec3d.md) & emissive, const double & alpha, const double & shininess) |
 | vector< string > | **[GetMaterialNames](Modules/group___visualization.md#function-getmaterialnames)**() |
 | void | **[SetBackground](Modules/group___visualization.md#function-setbackground)**(double r, double g, double b) |
 | void | **[SetAllViews](Modules/group___visualization.md#function-setallviews)**(int view) |
@@ -59,7 +59,7 @@ Low level routine that should be called to set up GUI before running [StartGUI()
 InitGUI();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 InitGUI()
 ```
@@ -79,7 +79,7 @@ Launch the interactive OpenVSP GUI. In a multi-threaded environment, this must b
 StartGUI();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 StartGUI()
 ```
@@ -108,7 +108,7 @@ EnableStopGUIMenuItem();
 StartGUI();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 EnableStopGUIMenuItem()
 StartGUI()
@@ -136,7 +136,7 @@ EnableStopGUIMenuItem();
 StartGUI();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 EnableStopGUIMenuItem()
 DisableStopGUIMenuItem()
@@ -164,7 +164,7 @@ StopGUI();
 StartGUI();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 StartGUI()
 
@@ -197,7 +197,7 @@ StartGUI();
 PopupMsg( "This is a popup message." );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 StartGUI()
 
@@ -229,7 +229,7 @@ SetParmVal( length, 13.0 );
 UpdateGUI();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 StartGUI()
 
@@ -266,7 +266,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 if ( IsGUIBuild() ):
     print( "OpenVSP build is graphics capable." )
@@ -303,7 +303,7 @@ DeleteGeomVec( mesh_id_vec );
 Unlock();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 StartGUI()
 
@@ -347,7 +347,7 @@ DeleteGeomVec( mesh_id_vec );
 Unlock();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 StartGUI()
 
@@ -386,7 +386,7 @@ if ( IsEventLoopRunning() )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 StartGUI()
 
@@ -429,7 +429,7 @@ string fname = "test_screen_grab.png";
 ScreenGrab( fname, screenw, screenh, true, true );                // Take PNG screenshot
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 screenw = 2000                                             # Set screenshot width and height
 screenh = 2000
@@ -461,7 +461,7 @@ Toggle viewing the axis
 SetViewAxis( false );                                           // Turn off axis marker in corner of viewscreen
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 SetViewAxis( False )                                           # Turn off axis marker in corner of viewscreen
 ```
@@ -488,7 +488,7 @@ Toggle viewing the border frame
 SetShowBorders( false );                                        // Turn off red/black border on active window
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 SetShowBorders( False )                                        # Turn off red/black border on active window
 ```
@@ -521,7 +521,7 @@ string pid = AddGeom( "POD", "" );                             // Add Pod for te
 SetGeomDrawType( pid, GEOM_DRAW_SHADE );                       // Make pod appear as shaded
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pid = AddGeom( "POD", "" )                             # Add Pod for testing
 
@@ -558,7 +558,7 @@ string pid = AddGeom( "POD", "" );
 SetGeomWireColor( pid, 0, 0, 255 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pid = AddGeom( "POD", "" )
 
@@ -593,7 +593,7 @@ string pid = AddGeom( "POD" );                             // Add Pod for testin
 SetGeomDisplayType( pid, DISPLAY_DEGEN_PLATE );                       // Make pod appear as Bezier plate (Degen Geom)
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pid = AddGeom( "POD" )                             # Add Pod for testing
 
@@ -626,7 +626,7 @@ string pid = AddGeom( "POD" );
 SetGeomMaterialName( pid, "Ruby" );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pid = AddGeom( "POD" )
 
@@ -654,10 +654,10 @@ void AddMaterial(
 **Parameters**: 
 
   * **name** string Material name 
-  * **ambient** vec3d Ambient color RGB triple on scale [0, 255] 
-  * **diffuse** vec3d Diffuse color RGB triple on scale [0, 255] 
-  * **specular** vec3d Specular color RGB triple on scale [0, 255] 
-  * **emissive** vec3d Emissive color RGB triple on scale [0, 255] 
+  * **ambient** [vec3d](Classes/classvec3d.md) Ambient color RGB triple on scale [0, 255] 
+  * **diffuse** [vec3d](Classes/classvec3d.md) Diffuse color RGB triple on scale [0, 255] 
+  * **specular** [vec3d](Classes/classvec3d.md) Specular color RGB triple on scale [0, 255] 
+  * **emissive** [vec3d](Classes/classvec3d.md) Emissive color RGB triple on scale [0, 255] 
   * **shininess** double Shininess exponent on scale [0, 127] 
   * **alpha** double Transparency factor on scale [0, 1] 
 
@@ -671,7 +671,7 @@ AddMaterial( "RedGlass", vec3d( 44, 2, 2 ), vec3d( 156, 10, 10 ), vec3d( 185, 15
 SetGeomMaterialName( pid, "RedGlass" );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pid = AddGeom( "POD" )
 
@@ -702,7 +702,7 @@ for ( int i = 0; i < int( mat_array.size() ); i++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 mat_array = GetMaterialNames()
 
@@ -736,7 +736,7 @@ Set the background color
 SetBackground( 1.0, 1.0, 1.0 );                                 // Set background to bright white
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 SetBackground( 1.0, 1.0, 1.0 )                                 # Set background to bright white
 ```
@@ -763,7 +763,7 @@ Set the view of all viewports
 SetAllViews( CAM_CENTER );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 SetAllViews( CAM_CENTER )
 ```
@@ -792,7 +792,7 @@ Set the view of a particular viewports
 SetView( 0, CAM_CENTER );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 SetView( 0, CAM_CENTER )
 ```
@@ -812,7 +812,7 @@ Fit contents to all viewports
 FitAllViews();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 FitAllViews()
 ```
@@ -832,7 +832,7 @@ Reset views of all viewports
 ResetViews();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 ResetViews()
 ```
@@ -861,7 +861,7 @@ Set the rows and columns of the window layout
 SetWindowLayout( 2, 2 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 SetWindowLayout( 2, 2 )
 ```
@@ -890,7 +890,7 @@ Set whether all instances of GUI device type are disabled
 SetGUIElementDisable( GDEV_INPUT, true );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 SetGUIElementDisable( GDEV_INPUT, True )
 ```
@@ -919,7 +919,7 @@ Set whether screen is disabled
 SetGUIScreenDisable( VSP_CFD_MESH_SCREEN, true );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 SetGUIScreenDisable( VSP_CFD_MESH_SCREEN, True )
 ```
@@ -948,7 +948,7 @@ Set whether geom screen is disabled
 SetGeomScreenDisable( ALL_GEOM_SCREENS, true );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 SetGeomScreenDisable( ALL_GEOM_SCREENS, True )
 ```
@@ -975,7 +975,7 @@ Hide an OpenVSP GUI screen
 HideScreen( VSP_CFD_MESH_SCREEN );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 HideScreen( VSP_CFD_MESH_SCREEN )
 ```
@@ -1002,7 +1002,7 @@ Show an OpenVSP GUI screen
 ShowScreen( VSP_CFD_MESH_SCREEN );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 ShowScreen( VSP_CFD_MESH_SCREEN )
 ```
@@ -1016,4 +1016,4 @@ ShowScreen( VSP_CFD_MESH_SCREEN )
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:24 +0800

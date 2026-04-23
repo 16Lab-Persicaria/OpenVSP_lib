@@ -51,7 +51,7 @@ SetXSecTanAngles( GetXSec( xsec_surf, num_xsecs - 1 ), XSEC_BOTH_SIDES, -90 );
 Update();       // Force Surface Update
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 fid = AddGeom( "FUSELAGE", "" )             # Add Fuselage
 
@@ -144,7 +144,7 @@ Print( fname );
 WriteVSPFile( GetVSPFileName(), SET_ALL );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 fid = AddGeom( "FUSELAGE", "" )             # Add Fuselage
 
@@ -181,7 +181,7 @@ Print( string( "--->Resetting VSP model to blank slate\n" ) );
 ClearVSPModel();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 fid = AddGeom( "FUSELAGE", "" )             # Add Fuselage
 
@@ -199,4 +199,4 @@ ClearVSPModel()
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:24 +0800

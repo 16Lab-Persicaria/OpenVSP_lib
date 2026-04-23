@@ -71,7 +71,7 @@ string rid = AddRuler( pid1, 1, 0.2, 0.3, pid2, 0, 0.2, 0.3, "Ruler 1" );
 SetParmVal( FindParm( rid, "X_Offset", "Measure" ), 6.0 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pid1 = AddGeom( "POD", "" )
 
@@ -122,7 +122,7 @@ for( int n = 0 ; n < int( ruler_array.length() ) ; n++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pid1 = AddGeom( "POD", "" )
 
@@ -181,7 +181,7 @@ array< string > @ruler_array = GetAllRulers();
 DelRuler( ruler_array[0] );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pid1 = AddGeom( "POD", "" )
 
@@ -227,7 +227,7 @@ string rid2 = AddRuler( pid1, 0, 0.4, 0.6, pid1, 1, 0.8, 0.9, "Ruler 2" );
 DeleteAllRulers();
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pid1 = AddGeom( "POD", "" )
 
@@ -282,7 +282,7 @@ string probe_id = AddProbe( pid1, 0, 0.5, 0.8, "Probe 1" );
 SetParmVal( FindParm( probe_id, "Len", "Measure" ), 3.0 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pid1 = AddGeom( "POD", "" )
 
@@ -320,7 +320,7 @@ Print( "One Probe: ", false );
 Print( probe_array[0] );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pid1 = AddGeom( "POD", "" )
 
@@ -368,7 +368,7 @@ array< string > @probe_array = GetAllProbes();
 if ( probe_array.size() != 1 ) { Print( "Error: DelProbe" ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pid1 = AddGeom( "POD", "" )
 
@@ -410,7 +410,7 @@ array< string > @probe_array = GetAllProbes();
 if ( probe_array.size() != 0 ) { Print( "Error: DeleteAllProbes" ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 pid1 = AddGeom( "POD", "" )
 
@@ -435,4 +435,4 @@ if  len(probe_array) != 0 : print( "Error: DeleteAllProbes" )
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:23 +0800

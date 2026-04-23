@@ -14,7 +14,7 @@ The following group of API functions are available for general computations. In 
 | -------------- | -------------- |
 | std::string | **[ComputeMassProps](Modules/group___computations.md#function-computemassprops)**(int set, int num_slices, int idir) |
 | std::string | **[ComputeCompGeom](Modules/group___computations.md#function-computecompgeom)**(int set, bool half_mesh, int file_export_types) |
-| std::string | **[ComputePlaneSlice](Modules/group___computations.md#function-computeplaneslice)**(int set, int num_slices, const vec3d & norm, bool auto_bnd, double start_bnd =0, double end_bnd =0, bool measureduct =false) |
+| std::string | **[ComputePlaneSlice](Modules/group___computations.md#function-computeplaneslice)**(int set, int num_slices, const [vec3d](Classes/classvec3d.md) & norm, bool auto_bnd, double start_bnd =0, double end_bnd =0, bool measureduct =false) |
 | void | **[ComputeDegenGeom](Modules/group___computations.md#function-computedegengeom)**(int set, int file_export_types) |
 
 
@@ -56,7 +56,7 @@ array<double> @double_arr = GetDoubleResults( mass_res_id, "Total_Mass" );
 if ( double_arr.size() != 1 )                                    { Print( "---> Error: API ComputeMassProps" ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Test Mass Props ====//
 pid = AddGeom( "POD", "" )
@@ -108,7 +108,7 @@ string comp_res_id = FindLatestResultsID( "Comp_Geom" );                    // F
 array<double> @double_arr = GetDoubleResults( comp_res_id, "Wet_Area" );    // Extract Results
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geom ====//
 pid = AddGeom( "POD", "" )
@@ -169,7 +169,7 @@ array<double> @double_arr = GetDoubleResults( pslice_results, "Slice_Area" );
 if ( double_arr.size() != 6 )                                    { Print( "---> Error: API ComputePlaneSlice" ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geom ====//
 pid = AddGeom( "POD", "" )
@@ -214,7 +214,7 @@ SetComputationFileName( DEGEN_GEOM_CSV_TYPE, "TestDegenScript.csv" );
 ComputeDegenGeom( SET_ALL, DEGEN_GEOM_CSV_TYPE );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Set File Name ====//
 SetComputationFileName( DEGEN_GEOM_CSV_TYPE, "TestDegenScript.csv" )
@@ -232,4 +232,4 @@ ComputeDegenGeom( SET_ALL, DEGEN_GEOM_CSV_TYPE )
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:23 +0800

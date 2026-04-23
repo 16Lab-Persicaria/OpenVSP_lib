@@ -41,7 +41,7 @@ Get the total number of defined sets. Named sets are used to group components an
 if ( GetNumSets() <= 0 )                            { Print( "---> Error: API GetNumSets " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 if  GetNumSets() <= 0 : print( "---> Error: API GetNumSets " )
 ```
@@ -74,7 +74,7 @@ SetSetName( 3, "SetFromScript" );
 if ( GetSetName( 3 ) != "SetFromScript" )            { Print( "---> Error: API Get/Set Set Name " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 SetSetName( 3, "SetFromScript" )
 
@@ -111,7 +111,7 @@ if (GetSetName(3) != "SetFromScript" )
     Print("---> Error: API Get/Set Set Name");
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 SetSetName( 3, "SetFromScript" )
 
@@ -151,7 +151,7 @@ array<string> @geom_arr2 = GetGeomSet( "SetFromScript" );
 if ( geom_arr1.size() != geom_arr2.size() )            { Print( "---> Error: API GetGeomSet " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 SetSetName( 3, "SetFromScript" )
 
@@ -192,7 +192,7 @@ array<string> @geom_arr2 = GetGeomSet( "SetFromScript" );
 if ( geom_arr1.size() != geom_arr2.size() )            { Print( "---> Error: API GetGeomSet " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 SetSetName( 3, "SetFromScript" )
 
@@ -229,7 +229,7 @@ SetSetName( 3, "SetFromScript" );
 if ( GetSetIndex( "SetFromScript" ) != 3 ) { Print( "ERROR: GetSetIndex" ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 SetSetName( 3, "SetFromScript" )
 
@@ -268,7 +268,7 @@ SetSetFlag( fuseid, 3, true );
 if ( !GetSetFlag( fuseid, 3 ) )                        { Print( "---> Error: API Set/Get Set Flag " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Fuselage Geom
 fuseid = AddGeom( "FUSELAGE", "" )
@@ -310,7 +310,7 @@ SetSetFlag( fuseid, 3, true );
 if ( !GetSetFlag( fuseid, 3 ) )                        { Print( "---> Error: API Set/Get Set Flag " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Fuselage Geom
 fuseid = AddGeom( "FUSELAGE", "" )
@@ -357,7 +357,7 @@ bool flag_value = GetSetFlag( fuseid, 4 );
 if ( flag_value != true)                      { Print( "---> Error: API CopyPasteSet " ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Fuselage Geom
 fuseid = AddGeom( "FUSELAGE", "" )
@@ -416,7 +416,7 @@ double xmin, ymin, zmin, xlen, ylen, zlen;
 bool sethasmembers = GetBBoxSet( SET_ALL, xmin, ymin, zmin, xlen, ylen, zlen );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometry ====//
 pid = AddGeom( "POD" )
@@ -468,7 +468,7 @@ double xmin, ymin, zmin, xlen, ylen, zlen;
 bool sethasmembers = GetScaleIndependentBBoxSet( SET_ALL, xmin, ymin, zmin, xlen, ylen, zlen );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geometry ====//
 pid = AddGeom( "POD" )
@@ -487,4 +487,4 @@ sethasmembers, xmin, ymin, zmin, xlen, ylen, zlen = GetScaleIndependentBBoxSet( 
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:24 +0800

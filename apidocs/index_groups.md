@@ -26,7 +26,7 @@ title: Modules
 * **group [File Input and Output Functions](Modules/group___file_i_o.md)** <br>This group of functions provides file input and output interfacing through the API. Click here to return to the main page. 
 * **group [Geom Functions](Modules/group___geom.md)** <br>This group of functions is available for adding, deleting, and modifying OpenVSP Geoms through the API. Click here to return to the main page. 
 * **group [Group Modification Functions](Modules/group___group_mod.md)** <br>The functions in this group allow for sets to be scaled, rotated, and translated. Click here to return to the main page. 
-* **group [Matrix4d Functions](Modules/group___matrix4d.md)** <br>API functions that utilize the Matrix4d class are grouped here. For details of the class, including member functions, see Matrix4d. Click here to return to the main page. 
+* **group [Matrix4d Functions](Modules/group___matrix4d.md)** <br>API functions that utilize the [Matrix4d](Classes/class_matrix4d.md) class are grouped here. For details of the class, including member functions, see [Matrix4d](Classes/class_matrix4d.md). Click here to return to the main page. 
 * **group [Measure Tool Functions](Modules/group___measure.md)** <br>This group of API functions can be used to control the Ruler Tool through the API. Click here to return to the main page. 
 * **group [Mode Functions](Modules/group___mode.md)** <br>This group of API functions are used to manipulate Modes &ndash; a combination of Sets and Variable Presets Click here to return to the main page. 
 * **group [Propeller Blade Curve Functions](Modules/group___p_curve.md)** <br>The following group of API functions may be used to control parametric propeller blade curves (PCurves). Click here to return to the main page. 
@@ -46,10 +46,10 @@ title: Modules
 * **group [Visualization Functions](Modules/group___visualization.md)** <br>The following group of functions allow for the OpenVSP GUI to be manipulated through the API. Click here to return to the main page. 
 * **group [XSec and Airfoil Functions](Modules/group___x_sec.md)** <br>This group of functions provides API control of cross-sections (XSecs). Airfoils are a type of XSec included in this group as well. API functions for Body of Revolution XSecs are included in the Specialized Geometry group. Click here to return to the main page. 
 * **group [XSecSurf Functions](Modules/group___x_sec_surf.md)** <br>This group of API functions provides capabilities related to the XSecSurf class in OpenVSP. Click here to return to the main page. 
-* **group [Vec3D Functions](Modules/group__vec3d.md)** <br>API functions that utilize the vec3d class are grouped here. For details of the class, including member functions, see vec3d. Click here to return to the main page. 
+* **group [Vec3D Functions](Modules/group__vec3d.md)** <br>API functions that utilize the [vec3d](Classes/classvec3d.md) class are grouped here. For details of the class, including member functions, see [vec3d](Classes/classvec3d.md). Click here to return to the main page. 
 
 
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:24 +0800

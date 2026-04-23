@@ -52,7 +52,7 @@ AddExcrescence( "Miscellaneous", EXCRESCENCE_COUNT, 8.5 );
 AddExcrescence( "Cowl Boattail", EXCRESCENCE_CD, 0.0003 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 AddExcrescence( "Miscellaneous", EXCRESCENCE_COUNT, 8.5 )
 
@@ -87,7 +87,7 @@ AddExcrescence( "Percentage Example", EXCRESCENCE_PERCENT_GEOM, 5 );
 DeleteExcrescence( 2 ); // Last Index
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 AddExcrescence( "Miscellaneous", EXCRESCENCE_COUNT, 8.5 )
 
@@ -136,7 +136,7 @@ Print( "Starting USAF Atmosphere 1966 Table Creation. \n" );
 WriteAtmosphereCSVFile( "USAFAtmosphere1966Data.csv", ATMOS_TYPE_HERRINGTON_1966 );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 print( "Starting USAF Atmosphere 1966 Table Creation. \n" )
 
@@ -185,7 +185,7 @@ double delta_temp = 0;
 CalcAtmosphere( alt, delta_temp, ATMOS_TYPE_US_STANDARD_1976, temp, pres, pres_ratio, rho_ratio );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 alt = 4000
 
@@ -217,7 +217,7 @@ Print( "Starting Body Form Factor Data Creation. \n" );
 WriteBodyFFCSVFile( "BodyFormFactorData.csv" );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 print( "Starting Body Form Factor Data Creation. \n" )
 WriteBodyFFCSVFile( "BodyFormFactorData.csv" )
@@ -246,7 +246,7 @@ Print( "Starting Wing Form Factor Data Creation. \n" );
 WriteWingFFCSVFile( "WingFormFactorData.csv" );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 print( "Starting Wing Form Factor Data Creation. \n" )
 WriteWingFFCSVFile( "WingFormFactorData.csv" )
@@ -275,7 +275,7 @@ Print( "Starting Turbulent Friciton Coefficient Data Creation. \n" );
 WriteCfEqnCSVFile( "FrictionCoefficientData.csv" );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 print( "Starting Turbulent Friciton Coefficient Data Creation. \n" )
 WriteCfEqnCSVFile( "FrictionCoefficientData.csv" )
@@ -304,7 +304,7 @@ Print( "Starting Partial Friction Method Data Creation. \n" );
 WritePartialCfMethodCSVFile( "PartialFrictionMethodData.csv" );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 print( "Starting Partial Friction Method Data Creation. \n" )
 WritePartialCfMethodCSVFile( "PartialFrictionMethodData.csv" )
@@ -319,4 +319,4 @@ WritePartialCfMethodCSVFile( "PartialFrictionMethodData.csv" )
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:24 +0800

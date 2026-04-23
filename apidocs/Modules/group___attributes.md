@@ -39,7 +39,7 @@ This group is for functions included in the Attributes Manager. The Attributes M
 | vector< string > | **[GetAttributeParmID](Modules/group___attributes.md#function-getattributeparmid)**(const string & attrID) |
 | vector< double > | **[GetAttributeParmVal](Modules/group___attributes.md#function-getattributeparmval)**(const string & attrID) |
 | vector< string > | **[GetAttributeParmName](Modules/group___attributes.md#function-getattributeparmname)**(const string & attrID) |
-| vector< vec3d > | **[GetAttributeVec3dVal](Modules/group___attributes.md#function-getattributevec3dval)**(const string & attrID) |
+| vector< [vec3d](Classes/classvec3d.md) > | **[GetAttributeVec3dVal](Modules/group___attributes.md#function-getattributevec3dval)**(const string & attrID) |
 | vector< vector< int > > | **[GetAttributeIntMatrixVal](Modules/group___attributes.md#function-getattributeintmatrixval)**(const string & attrID) |
 | vector< vector< double > > | **[GetAttributeDoubleMatrixVal](Modules/group___attributes.md#function-getattributedoublematrixval)**(const string & attrID) |
 | void | **[SetAttributeName](Modules/group___attributes.md#function-setattributename)**(const string & attrID, const string & name) |
@@ -49,7 +49,7 @@ This group is for functions included in the Attributes Manager. The Attributes M
 | void | **[SetAttributeDouble](Modules/group___attributes.md#function-setattributedouble)**(const string & attrID, double value) |
 | void | **[SetAttributeString](Modules/group___attributes.md#function-setattributestring)**(const string & attrID, const string & value) |
 | void | **[SetAttributeParmID](Modules/group___attributes.md#function-setattributeparmid)**(const string & attrID, const string & value) |
-| void | **[SetAttributeVec3d](Modules/group___attributes.md#function-setattributevec3d)**(const string & attrID, const vector< vec3d > & value) |
+| void | **[SetAttributeVec3d](Modules/group___attributes.md#function-setattributevec3d)**(const string & attrID, const vector< [vec3d](Classes/classvec3d.md) > & value) |
 | void | **[SetAttributeIntMatrix](Modules/group___attributes.md#function-setattributeintmatrix)**(const string & attrID, const vector< vector< int > > & value) |
 | void | **[SetAttributeDoubleMatrix](Modules/group___attributes.md#function-setattributedoublematrix)**(const string & attrID, const vector< vector< double > > & value) |
 | void | **[DeleteAttribute](Modules/group___attributes.md#function-deleteattribute)**(const string & attrID) |
@@ -58,7 +58,7 @@ This group is for functions included in the Attributes Manager. The Attributes M
 | string | **[AddAttributeDouble](Modules/group___attributes.md#function-addattributedouble)**(const string & collID, const string & attributeName, double value) |
 | string | **[AddAttributeString](Modules/group___attributes.md#function-addattributestring)**(const string & collID, const string & attributeName, const string & value) |
 | string | **[AddAttributeParm](Modules/group___attributes.md#function-addattributeparm)**(const string & collID, const string & attributeName, const string & parmID) |
-| string | **[AddAttributeVec3d](Modules/group___attributes.md#function-addattributevec3d)**(const string & collID, const string & attributeName, const vector< vec3d > & value) |
+| string | **[AddAttributeVec3d](Modules/group___attributes.md#function-addattributevec3d)**(const string & collID, const string & attributeName, const vector< [vec3d](Classes/classvec3d.md) > & value) |
 | string | **[AddAttributeIntMatrix](Modules/group___attributes.md#function-addattributeintmatrix)**(const string & collID, const string & attributeName, const vector< vector< int > > & value) |
 | string | **[AddAttributeDoubleMatrix](Modules/group___attributes.md#function-addattributedoublematrix)**(const string & collID, const string & attributeName, const vector< vector< double > > & value) |
 | string | **[AddAttributeGroup](Modules/group___attributes.md#function-addattributegroup)**(const string & collID, const string & attributeName) |
@@ -85,7 +85,7 @@ string SummaryText = SummarizeAttributes();
 Print( SummaryText );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 SummaryText = SummarizeAttributes()
@@ -111,7 +111,7 @@ string SummaryTextTree = SummarizeAttributesAsTree();
 Print( SummaryTextTree );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 SummaryTextTree = SummarizeAttributesAsTree();
@@ -140,7 +140,7 @@ for ( int i = 0; i < int( AttrIDs.size() ); ++i )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 AttrIDs = FindAllAttributes()
@@ -177,7 +177,7 @@ for ( int i = 0; i < int( AttrIDs.size() ); ++i )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 AttrIDs = FindAttributesByName( "Watermark" )
@@ -213,7 +213,7 @@ string AttrID = FindAttributeByName( "Watermark", 0 );
 Print( AttrID );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 AttrID = FindAttributeByName( "Watermark", 0 )
@@ -251,7 +251,7 @@ string AttrID = FindAttributeInCollection( VehID, "Watermark", 0 );
 Print( AttrID );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 VehID = GetVehicleID()
@@ -290,7 +290,7 @@ for ( int i = 0; i < int( AttrNames.size() ); ++i )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 VehID = GetVehicleID()
@@ -331,7 +331,7 @@ for ( int i = 0; i < int( AttrIDs.size() ); ++i )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 VehID = GetVehicleID()
@@ -363,7 +363,7 @@ for ( int i = 0; i < int( AttachIDs.size() ); ++i )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 AttachIDs = FindAttributedObjects()
@@ -401,7 +401,7 @@ for ( int i = 0; i < int( AttachIDs.size() ); ++i )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 AttachIDs = FindAttributedObjects()
@@ -440,7 +440,7 @@ for ( int i = 0; i < int( AttachIDs.size() ); ++i )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 AttachIDs = FindAttributedObjects()
 for AttachID in AttachIDs:
@@ -478,7 +478,7 @@ for ( int i = 0; i < int( AttachIDs.size() ); ++i )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 AttachIDs = FindAttributedObjects()
@@ -522,7 +522,7 @@ string CollParentObjID = GetObjectParent( CollID );
 Print( CollParentObjID );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -567,7 +567,7 @@ string CollID = GetChildCollection( VehID );
 Print( CollID );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 VehID = GetVehicleID()
@@ -601,7 +601,7 @@ string CollID = GetGeomSetCollection( 0 );
 Print( CollID );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 CollID = GetGeomSetCollection( 0 )
@@ -640,7 +640,7 @@ for ( int i = 0; i < int( AttrIDs.size() ); ++i )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -688,7 +688,7 @@ for ( int i = 0; i < int( AttrNames.size() ); ++i )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -728,7 +728,7 @@ string AttrDoc = GetAttributeDoc( AttrID );
 Print( AttrDoc );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 AttrID = FindAllAttributes()[0]
@@ -766,7 +766,7 @@ Print( AttrType );
 // not implemented
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 AttrID = FindAllAttributes()[0]
@@ -802,7 +802,7 @@ string AttrTypeName = GetAttributeTypeName( AttrID );
 Print( AttrTypeName );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 AttrID = FindAllAttributes()[0]
@@ -849,7 +849,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 VehID = GetVehicleID()
@@ -903,7 +903,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 VehID = GetVehicleID()
@@ -957,7 +957,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 VehID = GetVehicleID()
@@ -1011,7 +1011,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 VehID = GetVehicleID()
@@ -1071,7 +1071,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 VehID = GetVehicleID()
@@ -1137,7 +1137,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -1206,7 +1206,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -1245,7 +1245,7 @@ vector< vec3d > GetAttributeVec3dVal(
 
 **Return**: Vec3d value of attribute 
 
-Get the vec3d value of a string-type attribute 
+Get the [vec3d](Classes/classvec3d.md) value of a string-type attribute 
 
 //==== Attribute: GetAttributeVec3dVal  =====//
 
@@ -1267,7 +1267,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -1327,7 +1327,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -1385,7 +1385,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 VehID = GetVehicleID()
@@ -1446,7 +1446,7 @@ else
 // not implemented
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -1507,7 +1507,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -1568,7 +1568,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -1630,7 +1630,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -1693,7 +1693,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -1756,7 +1756,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -1823,7 +1823,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -1863,7 +1863,7 @@ void SetAttributeVec3d(
 **Parameters**: 
 
   * **attrID** string of attribute ID 
-  * **value** vec3d value for attribute 
+  * **value** [vec3d](Classes/classvec3d.md) value for attribute 
 
 
 Set the Vec3d value of a Vec3d-type Attribute by ID 
@@ -1890,7 +1890,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -2023,7 +2023,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -2104,7 +2104,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -2169,7 +2169,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -2227,7 +2227,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -2286,7 +2286,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -2346,7 +2346,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -2412,7 +2412,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -2453,7 +2453,7 @@ string AddAttributeVec3d(
   * **value** Vec3d value of new attribute 
 
 
-Add a Vec3d attribute by name to an attribute collection use vec3d() to create a vec3d object to pass into the args! 
+Add a Vec3d attribute by name to an attribute collection use [vec3d()](Classes/classvec3d.md) to create a [vec3d](Classes/classvec3d.md) object to pass into the args! 
 
 //==== Attribute: AddAttributeVec3d  =====//
 
@@ -2476,7 +2476,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -2537,7 +2537,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -2600,7 +2600,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -2658,7 +2658,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -2712,7 +2712,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -2783,7 +2783,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -2872,7 +2872,7 @@ else
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 
 
@@ -2904,4 +2904,4 @@ else:
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:23 +0800

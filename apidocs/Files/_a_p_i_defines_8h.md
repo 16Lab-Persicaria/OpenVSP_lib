@@ -1,9 +1,9 @@
 ---
-title: geom_api/APIDefines.h
+title: D:/RSWdev/godot-cpp-template/external/geom_api/APIDefines.h
 
 ---
 
-# geom_api/APIDefines.h
+# D:/RSWdev/godot-cpp-template/external/geom_api/APIDefines.h
 
 
 
@@ -1293,4 +1293,4 @@ enum XSEC_WIDTH_SHIFT { XS_SHIFT_LE = 0,
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:24 +0800

@@ -1,9 +1,9 @@
 ---
-title: geom_api/VSP_Geom_API.h
+title: D:/RSWdev/godot-cpp-template/external/geom_api/VSP_Geom_API.h
 
 ---
 
-# geom_api/VSP_Geom_API.h
+# D:/RSWdev/godot-cpp-template/external/geom_api/VSP_Geom_API.h
 
 
 
@@ -1849,4 +1849,4 @@ extern bool BuildAdvLinkScript( int index );
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:24 +0800

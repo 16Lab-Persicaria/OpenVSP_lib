@@ -25,7 +25,7 @@ This group is for functions included in the Results Manager. The Results Manager
 | const std::vector< double > & | **[GetDoubleResults](Modules/group___results.md#function-getdoubleresults)**(const std::string & id, const std::string & name, int index =0) |
 | const std::vector< std::vector< double > > & | **[GetDoubleMatResults](Modules/group___results.md#function-getdoublematresults)**(const std::string & id, const std::string & name, int index =0) |
 | const std::vector< std::string > & | **[GetStringResults](Modules/group___results.md#function-getstringresults)**(const std::string & id, const std::string & name, int index =0) |
-| const std::vector< vec3d > & | **[GetVec3dResults](Modules/group___results.md#function-getvec3dresults)**(const std::string & id, const std::string & name, int index =0) |
+| const std::vector< [vec3d](Classes/classvec3d.md) > & | **[GetVec3dResults](Modules/group___results.md#function-getvec3dresults)**(const std::string & id, const std::string & name, int index =0) |
 | std::string | **[CreateGeomResults](Modules/group___results.md#function-creategeomresults)**(const std::string & geom_id, const std::string & name) |
 | void | **[DeleteAllResults](Modules/group___results.md#function-deleteallresults)**() |
 | void | **[DeleteResult](Modules/group___results.md#function-deleteresult)**(const std::string & id) |
@@ -60,7 +60,7 @@ for ( int i = 0; i < int( results_array.size() ); i++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Write Some Fake Test Results =====//
 WriteTestResults()
@@ -104,7 +104,7 @@ array< string > @data_names = GetAllDataNames( res_id );
 if ( data_names.size() != 5 )                            { Print( "---> Error: API GetAllDataNames" ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Write Some Fake Test Results =====//
 WriteTestResults()
@@ -143,7 +143,7 @@ WriteTestResults();
 if ( GetNumResults( "Test_Results" ) != 2 )                { Print( "---> Error: API GetNumResults" ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Write Some Fake Test Results =====//
 WriteTestResults()
@@ -185,7 +185,7 @@ Print( "Results Name: ", false );
 Print( GetResultsName( res_id ) );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Analysis: VSPAero Compute Geometry ====//
 analysis_name = "VSPAEROComputeGeometry"
@@ -234,7 +234,7 @@ Print( "Results doc: ", false );
 Print( GetResultsSetDoc( res_id ) );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Analysis: VSPAero Compute Geometry ====//
 analysis_name = "VSPAEROComputeGeometry"
@@ -280,7 +280,7 @@ string res_id = FindResultsID( "Test_Results" );
 if ( res_id.size() == 0 )                                { Print( "---> Error: API FindResultsID" ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Write Some Fake Test Results =====//
 WriteTestResults()
@@ -323,7 +323,7 @@ for ( int i = 0; i < int( results_array.size() ); i++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Write Some Fake Test Results =====//
 WriteTestResults()
@@ -375,7 +375,7 @@ int_arr = GetIntResults( res_id, "Test_Int", 1 );
 if ( int_arr[0] != 2 )                                    { Print( "---> Error: API GetIntResults" ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Write Some Fake Test Results =====//
 WriteTestResults()
@@ -431,7 +431,7 @@ for ( int j = 0; j < int( res_array.size() ); j++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Write Some Fake Test Results =====//
 WriteTestResults()
@@ -486,7 +486,7 @@ int_arr = GetIntResults( res_id, "Test_Int", 1 );
 if ( int_arr[0] != 2 )                                    { Print( "---> Error: API GetIntResults" ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Write Some Fake Test Results =====//
 WriteTestResults()
@@ -540,7 +540,7 @@ string comp_res_id = FindLatestResultsID( "Comp_Geom" );                    // F
 array<double> @double_arr = GetDoubleResults( comp_res_id, "Wet_Area" );    // Extract Results
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Add Pod Geom ====//
 pid = AddGeom( "POD", "" )
@@ -611,7 +611,7 @@ array<string> @str_arr = GetStringResults( res_id, "Test_String" );
 if ( str_arr[0] != "This Is A Test" )                    { Print( "---> Error: API GetStringResults" ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Write Some Fake Test Results =====//
 WriteTestResults()
@@ -646,7 +646,7 @@ const std::vector< vec3d > & GetVec3dResults(
 
 **Return**: Array of data values 
 
-Get all vec3d values for a particular result, name, and index 
+Get all [vec3d](Classes/classvec3d.md) values for a particular result, name, and index 
 
 //==== Write Some Fake Test Results =====//
 
@@ -668,7 +668,7 @@ Print( "\tZ: ", false );
 Print( vec3d_vec[0].z() );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Write Some Fake Test Results =====//
 
@@ -726,7 +726,7 @@ array<int> @int_arr = GetIntResults( mesh_geom_res_id, "Num_Tris" );
 if ( int_arr[0] < 4 )                                            { Print( "---> Error: API CreateGeomResults" ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Test Comp Geom ====//
 gid1 = AddGeom( "POD", "" )
@@ -766,7 +766,7 @@ DeleteAllResults();
 if ( GetNumResults( "Comp_Mesh" ) != 0 )                { Print( "---> Error: API DeleteAllResults" ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Test Comp Geom ====//
 gid1 = AddGeom( "POD", "" )
@@ -813,7 +813,7 @@ DeleteResult( mesh_geom_res_id );
 if ( GetNumResults( "Comp_Mesh" ) != 0 )                { Print( "---> Error: API DeleteResult" ); }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Test Comp Geom ====//
 gid1 = AddGeom( "POD", "" )
@@ -859,7 +859,7 @@ string rid = ExecAnalysis( analysis_name );
 WriteResultsCSVFile( rid, "CompGeomRes.csv" );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pid = AddGeom( "POD" )
@@ -901,7 +901,7 @@ string rid = ExecAnalysis( analysis_name );
 PrintResults( rid );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pid = AddGeom( "POD" )
@@ -944,7 +944,7 @@ string rid = ExecAnalysis( analysis_name );
 PrintResultsDoc( rid );
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 # Add Pod Geom
 pid = AddGeom( "POD" )
@@ -981,7 +981,7 @@ for ( int i = 0; i < int( results_array.size() ); i++ )
 }
 ```
 
- \endforcpponly \beginPythonOnly ```py
+ 
 
 #==== Write Some Fake Test Results =====//
 WriteTestResults()
@@ -1002,4 +1002,4 @@ for i in range( len( results_array ) ):
 
 -------------------------------
 
-Updated on 2026-04-23 at 11:25:06 +0800
+Updated on 2026-04-23 at 15:22:24 +0800
