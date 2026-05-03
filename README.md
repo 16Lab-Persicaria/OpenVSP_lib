@@ -1,6 +1,7 @@
 # OpenVSP Library
 
-Original repo: https://github.com/OpenVSP/OpenVSP
+Original repo: https://github.com/OpenVSP/OpenVSP.
+
 Rebuild OpenVSP 3.49.0 for using as an external cpp lib.
 Regenerated markdown docs by doxygen & doxybook2.
 
